@@ -1,4 +1,6 @@
 .header {
+    background: transparent;
+
     &__wrap {
         padding: calc(var(--gs) * 5) 0;
         display: flex;

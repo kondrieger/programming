@@ -1,5 +1,5 @@
 <template>
-    <div id="maths">
+    <div class="maths" id="maths">
         <Header />
         <MathsStartBlock />
     </div>
@@ -15,5 +15,3 @@ export default {
     components: { Header, MathsStartBlock },
 };
 </script>
-
-<style scoped></style>
