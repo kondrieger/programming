@@ -15,6 +15,7 @@
     --cl-blue: #1c90d2;
     --cl-dk-blue: #1e87c2;
     --cl-pink: #f8dddd;
+    --cl-red: #ff4c8d;
 
     /* rgb-составляющие цветов для использования rgba(var(--rgb-black), var(--opacity)). */
     --rgb-black: 0, 0, 0;
