@@ -1,0 +1,109 @@
+.features {
+    padding: calc(var(--gs) * 6) 0;
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        @media (--tablet-min) {
+            margin-right: -80px;
+        }
+
+        @media (--tablet) {
+            flex-direction: column;
+            justify-content: unset;
+        }
+
+        @media (--mobile-lg) {
+            display: block;
+        }
+        &-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 300px;
+
+            @media (--desktop) and (--tablet-min) {
+                max-width: 259px;
+            }
+
+            @media (--tablet) {
+                flex-direction: row;
+                justify-content: unset;
+            }
+
+            @media (--mobile-lg) {
+                flex-direction: column;
+            }
+
+            &:nth-child(1) {
+                @media (--tablet) {
+                    margin-left: calc(var(--gs) * 2);
+                    p {
+                        min-width: 250px;
+                    }
+                    img {
+                        order: -1;
+                    }
+                }
+            }
+            &:nth-child(2) {
+                @media (--desktop) and (--tablet-min) {
+                    max-width: 190px;
+                }
+                @media (--tablet) {
+                    margin-left: calc(var(--gs) * 19);
+
+                    p {
+                        min-width: 225px;
+                    }
+                }
+            }
+            &:nth-child(3) {
+                @media (--tablet) {
+                    margin-left: calc(var(--gs) * 0);
+                }
+                img {
+                    margin-left: -100px;
+                    @media (--desktop) and (--tablet-min) {
+                        margin-left: -80px;
+                    }
+
+                    @media (--tablet) {
+                        margin-left: 0;
+                        order: -1;
+                    }
+                }
+                p {
+                    margin-bottom: calc(var(--gs) * 2.5);
+                    @media (--tablet) {
+                        min-width: 319px;
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 20px;
+                margin-bottom: calc(var(--gs) * 4.5);
+
+                @media (--desktop) {
+                    font-size: 18px;
+                }
+
+                @media (--tablet) {
+                    font-size: 16px;
+                    margin-bottom: 0 !important;
+                }
+
+                @media (--mobile-lg) {
+                    order: -1;
+                    margin-bottom: calc(var(--gs) * 1) !important;
+                }
+            }
+
+            &-img {
+                max-height: 140px;
+            }
+        }
+    }
+}
