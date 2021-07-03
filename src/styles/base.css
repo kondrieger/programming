@@ -8,11 +8,6 @@
     margin: 0;
 }
 
-::selection {
-    color: var(--cl-white);
-    background: var(--cl-red);
-}
-
 :focus {
     outline: 2px solid var(--cl-black);
 }
@@ -31,19 +26,8 @@ body {
     background: var(--cl-white);
     font-size: 16px;
     line-height: 1.5;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-
-    /* При выделении красным, фото выглядят крипово, 
-    решили запретить выделение изображений */
-    user-select: none;
-
-    /* При использовании LQIP изображениям добавляется blur через фильтры.
-    Это правило добавляет им плавное исчезновение при окончании подгрузки изображения. */
-    transition: filter 1000ms;
+    font-family: var(--font-montserrat);
+    color: var(--cl-violet);
 }
 
 a {
@@ -52,12 +36,6 @@ a {
     color: var(--cl-black);
     text-decoration: none;
     fill: var(--cl-black);
-
-    &:hover {
-        border-color: var(--cl-red);
-        color: var(--cl-red);
-        fill: var(--cl-red);
-    }
 
     &:focus {
         border-color: transparent;
@@ -70,40 +48,39 @@ a {
 }
 
 h1 {
-    font-size: 80px;
+    font-size: 64px;
     line-height: 1;
+    font-weight: 800;
 }
 
 h2 {
-    font-size: 64px;
+    font-size: 56px;
     line-height: 1;
+    font-weight: 800;
 }
 
 h3 {
-    font-size: 56px;
+    font-size: 40px;
     line-height: 1;
+    font-weight: 800;
 }
 
 h4 {
     font-size: 32px;
     line-height: 1;
+    font-weight: 800;
 }
 
 h5 {
     font-size: 24px;
+    line-height: 1.33;
     font-weight: bold;
-    line-height: 1;
-}
-
-h6 {
-    font-size: 16px;
-    font-weight: bold;
-    line-height: calc(24 / 16);
 }
 
 p {
     font-size: 16px;
-    line-height: calc(24 / 16);
+    line-height: 1.33;
+    font-weight: 500;
 }
 
 ul,
@@ -126,10 +103,6 @@ ol {
 
     &::-ms-clear {
         display: none;
-    }
-
-    &.parsley-error {
-        border-color: var(--cl-red);
     }
 }
 

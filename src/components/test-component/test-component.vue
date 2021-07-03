@@ -1,5 +1,10 @@
 <template>
-  <div class="test container">ASDASD ASD ASD</div>
+  <div class="test container">
+    <h1>Всем приве приветский</h1>
+    <h2>Всем приве приветский</h2>
+    <h3>Всем приве приветский</h3>
+    <p>Всем приве приветский</p>
+  </div>
 </template>
 
 <script>
