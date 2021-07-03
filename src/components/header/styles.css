@@ -36,12 +36,14 @@
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        margin-left: -10px;
 
         @media (--desktop) {
             max-width: 380px;
         }
 
         &--media {
+            margin-left: 0;
             @media (--desktop) {
                 flex-direction: column;
                 margin-top: -17px;
@@ -49,10 +51,12 @@
         }
 
         &-link {
-            margin-right: calc(var(--gs) * 5);
+            margin-right: calc(var(--gs) * 4);
+            padding: calc(var(--gs) * 0.25) calc(var(--gs) * 1);
+            border-radius: 13px;
 
             @media (--desktop-lg) {
-                margin-right: calc(var(--gs) * 3);
+                margin-right: calc(var(--gs) * 2);
             }
 
             @media (--desktop) {
@@ -61,6 +65,17 @@
 
             p {
                 font-weight: 600 !important;
+            }
+
+            &:hover {
+                background-color: rgba(96, 43, 122, 0.1);
+            }
+
+            &:active {
+                background-color: var(--cl-violet);
+                p {
+                    color: var(--cl-white);
+                }
             }
 
             &:last-child {

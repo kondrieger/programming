@@ -1,6 +1,6 @@
 <template>
     <div id="maths">
-        <AHeader />
+        <Header />
         <div class="container">
             <submit-form />
         </div>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import AHeader from '../components/header/header.vue';
+import Header from '../components/header/header.vue';
 import SubmitForm from '../components/submit-form/submit-form.vue';
 
 export default {
     name: 'Maths',
 
-    components: { AHeader, SubmitForm },
+    components: { Header, SubmitForm },
 };
 </script>
 
