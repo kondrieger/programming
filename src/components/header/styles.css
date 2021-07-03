@@ -1,0 +1,129 @@
+.header {
+    &__wrap {
+        padding: calc(var(--gs) * 5) 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (--tablet) {
+            align-items: flex-start;
+        }
+    }
+
+    &__logo {
+        width: 200px;
+        height: 63px;
+        margin-right: 50px;
+        margin-bottom: -25px;
+
+        @media (--desktop-lg) {
+            margin-right: 20px;
+        }
+
+        @media (--desktop) {
+            margin-bottom: 20px;
+        }
+
+        @media (--tablet) {
+            width: 145px;
+            height: 46px;
+            margin-right: 0;
+            margin-bottom: -60px;
+        }
+    }
+
+    &__links {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        @media (--desktop) {
+            max-width: 380px;
+        }
+
+        &--media {
+            @media (--desktop) {
+                flex-direction: column;
+                margin-top: -17px;
+            }
+        }
+
+        &-link {
+            margin-right: calc(var(--gs) * 5);
+
+            @media (--desktop-lg) {
+                margin-right: calc(var(--gs) * 3);
+            }
+
+            @media (--desktop) {
+                margin-bottom: 10px;
+            }
+
+            p {
+                font-weight: 600 !important;
+            }
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        &-phone {
+            margin-right: calc(var(--gs) * 6);
+
+            @media (--desktop-lg) {
+                margin-right: calc(var(--gs) * 5);
+            }
+
+            @media (--desktop) {
+                margin-right: 0;
+                order: 100;
+            }
+        }
+
+        &-link,
+        &-phone {
+            p {
+                font-weight: 600 !important;
+            }
+        }
+
+        &-social {
+            display: flex;
+
+            &-item {
+                display: flex;
+                align-items: center;
+
+                @media (--desktop) {
+                    margin-bottom: 10px;
+                }
+
+                &:first-child {
+                    margin-right: calc(var(--gs) * 2.5);
+                }
+
+                &-img {
+                    &--whats {
+                        width: 27px;
+                        height: 28px;
+                    }
+
+                    &--tg {
+                        width: 29px;
+                        height: 25px;
+                    }
+                }
+            }
+        }
+    }
+
+    &__burger {
+        &-img {
+            @media (--mobile-lg) {
+                width: 24px;
+                height: 20px;
+            }
+        }
+    }
+}

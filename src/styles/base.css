@@ -28,7 +28,6 @@ body {
 
 a {
     display: inline-block;
-    border-bottom: 1px solid var(--cl-black);
     color: var(--cl-black);
     text-decoration: none;
     fill: var(--cl-black);
@@ -77,6 +76,7 @@ p {
     font-size: 16px;
     line-height: 1.33;
     font-weight: 500;
+    color: var(--cl-violet);
 }
 
 ul,
