@@ -25,7 +25,7 @@ import AButton from '../../components/button/button.vue';
 import './styles.css';
 
 export default {
-    name: 'Maths',
+    name: 'MathsStartBlock',
 
     components: { SubmitForm, AButton },
     computed: {

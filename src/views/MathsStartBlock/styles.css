@@ -4,14 +4,20 @@
     justify-content: space-between;
     background-position: top center;
     background: transparent;
-    padding-bottom: calc(var(--gs) * 30);
+    padding-bottom: calc(var(--gs) * 10);
 
     @media (--desktop) {
         padding-top: calc(var(--gs) * 1);
     }
+
     @media (--tablet) {
         padding-top: calc(var(--gs) * 4);
-        padding-bottom: calc(var(--gs) * 50);
+        padding-bottom: calc(var(--gs) * 15);
+    }
+
+    @media (--mobile-lg) {
+        padding-top: calc(var(--gs) * 4);
+        padding-bottom: calc(var(--gs) * 25);
     }
 
     &::before {
