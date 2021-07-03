@@ -24,6 +24,7 @@ body {
     line-height: 1.5;
     font-family: var(--font-montserrat);
     color: var(--cl-violet);
+    overflow-x: hidden;
 }
 
 a {

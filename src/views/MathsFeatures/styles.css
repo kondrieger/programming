@@ -1,5 +1,10 @@
 .features {
     padding: calc(var(--gs) * 6) 0;
+    overflow: hidden;
+
+    @media (--tablet) {
+        padding: calc(var(--gs) * 2) 0;
+    }
 
     &__list {
         display: flex;
@@ -34,6 +39,7 @@
 
             @media (--mobile-lg) {
                 flex-direction: column;
+                margin: 0 !important;
             }
 
             &:nth-child(1) {
