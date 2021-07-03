@@ -8,10 +8,6 @@
     margin: 0;
 }
 
-:focus {
-    outline: 2px solid var(--cl-black);
-}
-
 .js-focus-visible :focus:not(.focus-visible) {
     outline: none;
 }

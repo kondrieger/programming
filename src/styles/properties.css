@@ -8,7 +8,13 @@
     --cl-white: #fff;
     --cl-violet: #602b7a;
     --cl-dk-violet: #491a60;
-    --cl-yellow: #ffde89;
+    --cl-yellow: #ffd749;
+    --cl-dk-yellow: #ffde89;
+    --cl-green: #00a390;
+    --cl-dk-green: #008d7d;
+    --cl-blue: #1c90d2;
+    --cl-dk-blue: #1e87c2;
+    --cl-pink: #f8dddd;
 
     /* rgb-составляющие цветов для использования rgba(var(--rgb-black), var(--opacity)). */
     --rgb-black: 0, 0, 0;
