@@ -5,8 +5,13 @@
         align-items: center;
         justify-content: space-between;
 
+        @media (--desktop) {
+            padding: calc(var(--gs) * 4) 0 calc(var(--gs) * 2);
+        }
+
         @media (--tablet) {
             align-items: flex-start;
+            padding-top: calc(var(--gs) * 2);
         }
     }
 

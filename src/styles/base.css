@@ -52,6 +52,18 @@ h2 {
     font-size: 56px;
     line-height: 1;
     font-weight: 800;
+
+    @media (--desktop) {
+        font-size: 48px;
+    }
+
+    @media (--tablet) {
+        font-size: 37px;
+    }
+
+    @media (--mobile-lg) {
+        font-size: 28px;
+    }
 }
 
 h3 {

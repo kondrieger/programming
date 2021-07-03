@@ -90,5 +90,18 @@ export default {
             background-color: var(--cl-blue);
         }
     }
+
+    &--violet {
+        color: var(--cl-white);
+        background-color: var(--cl-violet);
+
+        &:hover {
+            background-color: var(--cl-dk-violet);
+        }
+
+        &:active {
+            background-color: var(--cl-violet);
+        }
+    }
 }
 </style>
