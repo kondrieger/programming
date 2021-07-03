@@ -1,0 +1,20 @@
+:root {
+    /* Минимальный размер сетки.
+    Все размеры делаем кратными ему (кроме случаев, где сетка неприменима). */
+    --gs: 10px;
+
+    /* Глобальные цвета проекта. */
+    --cl-black: #222;
+    --cl-white: #fff;
+    --cl-red: #ed0303;
+    --cl-dk-red: #d40f0f;
+    --cl-grey: #989c9f;
+    --cl-lg-grey: #c5c9cd;
+    --cl-bg-grey: #f3f6fa;
+
+    /* rgb-составляющие цветов для использования rgba(var(--rgb-black), var(--opacity)). */
+    --rgb-black: 0, 0, 0;
+
+    /* Шрифты проекта. */
+    --font-montserrat: 'Montserrat', Arial, sans-serif;
+}
