@@ -7,6 +7,7 @@
         <MathsComment />
         <MathsCourses />
         <MathsClaim />
+        <MathsRoadmap />
     </div>
 </template>
 
@@ -18,11 +19,21 @@ import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
 import MathsComment from '../views/MathsComment/MathsComment.vue';
 import MathsCourses from '../views/MathsCourses/MathsCourses.vue';
 import MathsClaim from '../views/MathsClaim/MathsClaim.vue';
+import MathsRoadmap from '../views/MathsRoadmap/MathsRoadmap.vue';
 
 export default {
     name: 'Maths',
 
-    components: { Header, MathsStartBlock, MathFeatures, MathsWorld, MathsComment, MathsCourses, MathsClaim },
+    components: {
+        Header,
+        MathsStartBlock,
+        MathFeatures,
+        MathsWorld,
+        MathsComment,
+        MathsCourses,
+        MathsClaim,
+        MathsRoadmap,
+    },
 };
 </script>
 

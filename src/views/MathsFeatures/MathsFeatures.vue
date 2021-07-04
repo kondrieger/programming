@@ -65,36 +65,3 @@ export default {
     },
 };
 </script>
-
-<style>
-.swiper-container {
-    height: 300px;
-    width: 100%;
-}
-
-.swiper-slide {
-    text-align: center;
-    font-size: 38px;
-    font-weight: 700;
-    background-color: transparent;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-}
-
-.swiper-pagination-bullet {
-    background-color: var(--cl-violet);
-    opacity: 1;
-}
-
-.swiper-pagination-bullet-active {
-    border: 1px solid var(--cl-violet);
-    background-color: #fff;
-}
-</style>

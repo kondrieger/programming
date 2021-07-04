@@ -4,16 +4,8 @@
             <h2 class="start-block__text-title">В будущее без машины времени</h2>
             <p class="start-block__text-subtitle">Увлекательные курсы математики, которые влюбляют детей в предмет</p>
             <a-button v-if="isTablet" theme="violet" text="Полетели!" />
-            <img
-                class="start-block__text-image--triangle"
-                :src="require('../../img/svg/triangle_man.svg')"
-                alt="Алгоритмика математика логотип"
-            />
-            <img
-                class="start-block__text-image--birdman"
-                :src="require('../../img/svg/bird_man.svg')"
-                alt="Алгоритмика математика логотип"
-            />
+            <img class="start-block__text-image--triangle" :src="require('../../img/svg/triangle_man.svg')" alt="" />
+            <img class="start-block__text-image--birdman" :src="require('../../img/svg/bird_man.svg')" alt="" />
         </div>
         <submit-form v-if="!isTablet" />
     </div>

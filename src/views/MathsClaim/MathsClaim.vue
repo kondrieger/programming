@@ -13,8 +13,6 @@
 <script>
 import AButton from '../../components/button/button.vue';
 
-import './styles.css';
-
 export default {
     components: { AButton },
 };
