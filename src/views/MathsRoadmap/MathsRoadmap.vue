@@ -2,7 +2,7 @@
     <div class="container roadmap">
         <h2 class="roadmap__title">Почему нам доверяют родители сотен тысяч детей по всему миру?</h2>
 
-        <ul class="roadmap__list">
+        <ul v-if="!isDesktop" class="roadmap__list">
             <li class="roadmap__list-item">
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
@@ -59,20 +59,125 @@
                 </div>
             </li>
         </ul>
+        <swiper v-else ref="mySwiper" class="" :options="swiperOptions">
+            <swiper-slide class="roadmap__slide">
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.png')" alt="" />
+                <div class="roadmap__list-item-text-wrap">
+                    <span class="roadmap__list-item-number">1</span>
+                    <p class="roadmap__list-item-title">Собственная игровая методика</p>
+                    <p class="roadmap__list-item-text">
+                        Учимся в компании троллей-спецагентов: сюжетная линия превращает процесс обучения в
+                        многосерийный мультфильм
+                    </p>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="roadmap__slide">
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_2.png')" alt="" />
+                <div class="roadmap__list-item-text-wrap">
+                    <span class="roadmap__list-item-number">2</span>
+                    <p class="roadmap__list-item-title">Обучающая платформа</p>
+                    <p class="roadmap__list-item-text">
+                        Получаем неограниченный доступ к умному учебнику и проходим задания в своем темпе, не
+                        ориентируясь на остальную группу
+                    </p>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="roadmap__slide">
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_3.png')" alt="" />
+                <div class="roadmap__list-item-text-wrap">
+                    <span class="roadmap__list-item-number">3</span>
+                    <p class="roadmap__list-item-title">Закрепление школьной программы</p>
+                    <p class="roadmap__list-item-text">
+                        Учимся понимать, а не зубрить: проходим все ключевые темы школьной математики и восполняем
+                        пробелы
+                    </p>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="roadmap__slide">
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_4.png')" alt="" />
+                <div class="roadmap__list-item-text-wrap">
+                    <span class="roadmap__list-item-number">4</span>
+                    <p class="roadmap__list-item-title">Подготовка к будущему</p>
+                    <p class="roadmap__list-item-text">
+                        Решаем олимпиадные задачи, участвуем в математических боях и прокачиваем навыки, которые помогут
+                        в дальнейшей учебе и будущей профессии
+                    </p>
+                </div>
+            </swiper-slide>
+            <swiper-slide class="roadmap__slide">
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_5.png')" alt="" />
+                <div class="roadmap__list-item-text-wrap">
+                    <span class="roadmap__list-item-number">5</span>
+                    <p class="roadmap__list-item-title">Учеба без стресса</p>
+                    <p class="roadmap__list-item-text">
+                        Не пишем контрольные, не отвечаем у доски и не делаем домашку, зато перестаем бояться ошибок и
+                        точных наук
+                    </p>
+                </div>
+            </swiper-slide>
+            <div class="swiper-pagination" slot="pagination"></div>
+        </swiper>
     </div>
 </template>
 
 <script>
-export default {};
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+
+import './styles.css';
+
+export default {
+    name: 'MathRoadmap',
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    directives: {
+        swiper: directive,
+    },
+    data() {
+        return {
+            swiperOptions: {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            },
+        };
+    },
+    computed: {
+        isDesktop() {
+            return this.$mq.desktop;
+        },
+    },
+};
 </script>
 
 <style>
 .roadmap {
     padding: calc(var(--gs) * 10) 0;
 
+    @media (--tablet) {
+        padding: calc(var(--gs) * 6) 0 calc(var(--gs) * 8);
+    }
+
     &__title {
         max-width: 1100px;
         margin-bottom: calc(var(--gs) * 5);
+
+        @media (--desktop) {
+            max-width: 828px;
+            margin-bottom: calc(var(--gs) * 2);
+        }
+
+        @media (--tablet) {
+            font-size: 24px;
+            line-height: 28px;
+            margin-bottom: 0;
+        }
+
+        @media (--mobile-lg) {
+            font-size: 28px;
+        }
     }
 
     &__list {
@@ -230,6 +335,126 @@ export default {};
                 font-size: 24px;
                 line-height: 1.3;
             }
+        }
+    }
+
+    &__slide {
+        @media (--mobile-lg) {
+            flex-direction: column;
+        }
+
+        & .roadmap__list-item-img {
+            @media (--tablet-min) {
+                margin-right: calc(var(--gs) * 3);
+            }
+
+            @media (--tablet) {
+                max-width: 240px;
+                margin-right: calc(var(--gs) * 2);
+            }
+        }
+
+        & .roadmap__list-item-text-wrap {
+            @media (--tablet) {
+                max-width: 250px;
+            }
+
+            @media (--mobile-lg) {
+                max-width: 100%;
+            }
+        }
+
+        & .roadmap__list-item-number {
+            @media (--tablet) {
+                font-size: 30px;
+                width: 64.11px;
+                height: 64.11px;
+                margin-bottom: calc(var(--gs) * 1);
+            }
+
+            @media (--mobile-lg) {
+                width: 56px;
+                height: 56px;
+
+                margin-bottom: calc(var(--gs) * 3);
+            }
+        }
+
+        &:nth-child(1),
+        &:nth-child(4),
+        &:nth-child(5) {
+            @media (--mobile-lg) {
+                & .roadmap__list-item-number {
+                    margin-top: -35px;
+                }
+            }
+        }
+
+        & .roadmap__list-item-title {
+            @media (--tablet) {
+                font-size: 18px;
+                margin-bottom: calc(var(--gs) * 1);
+                max-width: 250px;
+                width: 250px;
+            }
+        }
+
+        & .roadmap__list-item-text {
+            @media (--tablet) {
+                margin-top: 0;
+            }
+
+            @media (--mobile-lg) {
+                font-size: 14px;
+                line-height: 20px;
+            }
+        }
+    }
+
+    .swiper-container {
+        height: 440px;
+        width: 100%;
+
+        @media (--tablet) {
+            height: 360px;
+        }
+
+        @media (--mobile-lg) {
+            height: 520px;
+        }
+    }
+
+    .swiper-slide {
+        font-weight: 700;
+        background-color: transparent;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--cl-violet);
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        border: 1px solid var(--cl-violet);
+        background-color: transparent;
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 0;
+
+        @media (--mobile-lg) {
+            bottom: -5px;
         }
     }
 }
