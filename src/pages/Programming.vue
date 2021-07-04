@@ -4,11 +4,13 @@
             <Header />
             <ProgrammingStartBlock />
         </div>
-        <div class="wrap--violet">
-            <ProgrammingFeatures />
-            <MathsWorld />
-            <MathsComment />
-            <MathsCourses />
+        <div class="wrap--bg">
+            <div class="wrap--violet">
+                <ProgrammingFeatures />
+                <MathsWorld />
+                <MathsComment />
+                <MathsCourses />
+            </div>
         </div>
         <MathsClaim />
         <MathsRoadmap />
@@ -47,55 +49,52 @@ export default {
         @media (--desktop) {
             position: relative;
             overflow: hidden;
-            margin-bottom: -46px;
+            margin-bottom: -18px;
             z-index: 3;
         }
 
         @media (--tablet) {
-            margin-bottom: -24px;
+            margin-bottom: 5px;
         }
 
         @media (--mobile-lg) {
-            margin-bottom: -20px;
+            margin-bottom: 11px;
         }
     }
 
-    &--violet {
-        background-color: var(--cl-violet);
-    }
-}
-.programming {
-    position: relative;
+    &--bg {
+        position: relative;
 
-    &::before {
-        /* content: ''; */
-        position: absolute;
-        top: -30px;
-        width: 100%;
-        height: 4315.69px;
-        background-image: svg-load('../img/svg/math_bg.svg');
-        background-repeat: no-repeat;
-        background-position: center center;
-        z-index: -100;
+        &::before {
+            content: '';
+            position: absolute;
+            top: -30px;
+            width: 100%;
+            height: 4315.69px;
+            background-image: svg-load('../img/svg/programming_bg.svg');
+            background-color: var(--cl-violet);
+            background-repeat: no-repeat;
+            background-position: center 200px;
+            z-index: -10;
 
-        @media (--desktop-lg) {
-            height: 4015.69px;
-            background-position: center 33px;
-        }
+            @media (--desktop-lg) {
+                height: 4015.69px;
+            }
 
-        @media (--desktop) {
-            background-position: center 73px;
-        }
+            @media (--desktop) {
+                background-position: center 120px;
+            }
 
-        @media (--tablet) {
-            height: 2915.69px;
-            background-position: center -206px;
-        }
+            @media (--tablet) {
+                height: 2915.69px;
+                background-position: center 190px;
+            }
 
-        @media (--mobile-lg) {
-            height: 3315.69px;
-            background-position: center -15px;
-            background-image: svg-load('../img/svg/math_bg_sm.svg');
+            @media (--mobile-lg) {
+                height: 3315.69px;
+                background-position: center 530px;
+                background-image: svg-load('../img/svg/programming_bg_sm.svg');
+            }
         }
     }
 }

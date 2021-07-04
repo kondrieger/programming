@@ -5,11 +5,11 @@
     background: transparent;
     padding-bottom: calc(var(--gs) * 10);
     color: var(--cl-violet);
-    z-index: 2;
+    z-index: -1;
 
     @media (--desktop-min) {
         position: relative;
-        margin-bottom: -33px;
+        margin-bottom: -3px;
     }
 
     @media (--desktop) {

@@ -6,7 +6,7 @@
                     Учитесь в школе<br />
                     международного уровня
                 </h2>
-                <img class="world__map" :src="require('../../img/svg/map_white.svg')" alt="" />
+                <img class="world__map" :src="require('../../img/svg/map_yellow.svg')" alt="" />
                 <div class="world__list-wrap">
                     <ul class="world__list">
                         <li class="world__list-item">

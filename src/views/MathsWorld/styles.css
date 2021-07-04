@@ -6,6 +6,10 @@
     flex-direction: column;
     overflow: visible;
 
+    @media (--tablet) {
+        padding-top: calc(var(--gs) * 5);
+    }
+
     @media (--mobile-lg) {
         padding-top: calc(var(--gs) * 2);
     }
