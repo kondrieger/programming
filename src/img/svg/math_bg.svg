@@ -62,4 +62,6 @@
 <ellipse cx="1497.62" cy="2136.5" rx="995.5" ry="935.5" fill="#E7F6F7" stroke="#B9E2E7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"/>
 <ellipse cx="1500.62" cy="2161" rx="830.5" ry="780" fill="#E7F6F7" stroke="#B9E2E7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="16 16"/>
 <ellipse cx="1500.62" cy="2148.5" rx="802.5" ry="732.5" fill="#B9E2E7"/>
+<circle cx="1014.12" cy="2878" r="160" fill="#D1ECEF"/>
+<circle cx="999.125" cy="2887" r="129" stroke="#F8F7F1" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="12 12"/>
 </svg>
