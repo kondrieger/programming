@@ -177,7 +177,6 @@ export default {};
                 flex-direction: column-reverse;
 
                 & .roadmap__list-item-img {
-                    margin-bottom: calc(var(--gs) * 4);
                     width: 390.74px;
                     height: 353.02px;
                 }
@@ -193,7 +192,7 @@ export default {};
                 width: 394px;
 
                 & .roadmap__list-item-img {
-                    margin-bottom: calc(var(--gs) * 4);
+                    margin-bottom: calc(var(--gs) * 1);
                     width: 387px;
                     height: 363px;
                 }
