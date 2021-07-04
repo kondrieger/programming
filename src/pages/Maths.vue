@@ -6,6 +6,7 @@
         <MathsWorld />
         <MathsComment />
         <MathsCourses />
+        <MathsClaim />
     </div>
 </template>
 
@@ -16,11 +17,12 @@ import MathFeatures from '../views/MathsFeatures/MathsFeatures.vue';
 import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
 import MathsComment from '../views/MathsComment/MathsComment.vue';
 import MathsCourses from '../views/MathsCourses/MathsCourses.vue';
+import MathsClaim from '../views/MathsClaim/MathsClaim.vue';
 
 export default {
     name: 'Maths',
 
-    components: { Header, MathsStartBlock, MathFeatures, MathsWorld, MathsComment, MathsCourses },
+    components: { Header, MathsStartBlock, MathFeatures, MathsWorld, MathsComment, MathsCourses, MathsClaim },
 };
 </script>
 
@@ -40,6 +42,7 @@ export default {
         z-index: -100;
 
         @media (--desktop-lg) {
+            height: 4015.69px;
             background-position: center 33px;
         }
 
@@ -48,10 +51,12 @@ export default {
         }
 
         @media (--tablet) {
+            height: 2915.69px;
             background-position: center -206px;
         }
 
         @media (--mobile-lg) {
+            height: 3315.69px;
             background-position: center -15px;
             background-image: svg-load('../img/svg/math_bg_sm.svg');
         }
