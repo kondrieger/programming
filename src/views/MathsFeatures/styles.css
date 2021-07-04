@@ -2,8 +2,12 @@
     padding: calc(var(--gs) * 6) 0;
     overflow: hidden;
 
+    @media (--desktop) {
+        padding: calc(var(--gs) * 9) 0;
+    }
+
     @media (--tablet) {
-        padding: calc(var(--gs) * 2) 0;
+        padding: calc(var(--gs) * 3) 0;
     }
 
     &__list {
@@ -35,6 +39,7 @@
             @media (--tablet) {
                 flex-direction: row;
                 justify-content: unset;
+                margin-bottom: 5px;
             }
 
             @media (--mobile-lg) {
@@ -50,6 +55,7 @@
                     }
                     img {
                         order: -1;
+                        margin-right: 10px;
                     }
                 }
             }

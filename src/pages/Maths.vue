@@ -29,7 +29,6 @@ export default {
         position: absolute;
         top: -30px;
         width: 100%;
-        width: 100%;
         height: 4315.69px;
         background-image: svg-load('../img/svg/math_bg.svg');
         background-repeat: no-repeat;
