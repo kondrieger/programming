@@ -1,5 +1,5 @@
 <template>
-    <div class="container start-block start-block--programming">
+    <div class="container start-block">
         <div class="start-block__text">
             <h2 class="start-block__text-title">В будущее без машины времени</h2>
             <p class="start-block__text-subtitle">Курсы программирования для детей от 6 до 17 лет</p>
@@ -38,10 +38,8 @@ export default {
 
 <style scoped>
 .start-block {
-    &--programming {
-        @media (--desktop-min) {
-            position: relative;
-        }
+    @media (--desktop-min) {
+        position: relative;
     }
 
     &__bg {
@@ -55,6 +53,17 @@ export default {
             @media (--desktop) {
                 right: 20px;
                 top: 10px;
+            }
+
+            @media (--tablet) {
+                width: 398.34px;
+                height: 231.75px;
+                top: -100px;
+                right: -100px;
+            }
+
+            @media (--mobile-lg) {
+                transform: rotate(10deg);
             }
         }
 
@@ -71,6 +80,18 @@ export default {
                 width: 1171.54px;
                 height: 403.56px;
                 left: -150px;
+            }
+
+            @media (--tablet) {
+                width: 992px;
+                height: 306.78px;
+                left: -80px;
+            }
+
+            @media (--mobile-lg) {
+                width: 797.4px;
+                height: 238.06px;
+                left: -180px;
             }
         }
     }

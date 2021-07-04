@@ -15,7 +15,7 @@
 
 <script>
 import Header from '../components/header/header-programming.vue';
-import ProgrammingStartBlock from '../views/StartBlock/ProgrammingStartBlock.vue';
+import ProgrammingStartBlock from '../views/ProgrammingStartBlock/ProgrammingStartBlock.vue';
 import MathFeatures from '../views/MathsFeatures/MathsFeatures.vue';
 import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
 import MathsComment from '../views/MathsComment/MathsComment.vue';

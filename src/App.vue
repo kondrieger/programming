@@ -1,9 +1,5 @@
 <template>
     <div id="app">
-        <div id="nav">
-            <router-link to="/maths">Математика</router-link> |
-            <router-link to="/programming">Программирование</router-link>
-        </div>
         <router-view />
     </div>
 </template>
