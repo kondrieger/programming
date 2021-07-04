@@ -1,22 +1,13 @@
 .features {
-    padding: calc(var(--gs) * 6) 0;
-    overflow: hidden;
-
-    @media (--desktop) {
-        padding: calc(var(--gs) * 9) 0;
-    }
+    padding: calc(var(--gs) * 9) 0;
 
     @media (--tablet) {
-        padding: calc(var(--gs) * 3) 0;
+        padding: calc(var(--gs) * 5) 0;
     }
 
     &__list {
         display: flex;
         justify-content: space-between;
-
-        @media (--tablet-min) {
-            margin-right: -80px;
-        }
 
         @media (--tablet) {
             flex-direction: column;
@@ -33,7 +24,7 @@
             max-width: 300px;
 
             @media (--desktop) and (--tablet-min) {
-                max-width: 259px;
+                max-width: 269px;
             }
 
             @media (--tablet) {
@@ -49,20 +40,17 @@
 
             &:nth-child(1) {
                 @media (--tablet) {
-                    margin-left: calc(var(--gs) * 2);
+                    margin-left: calc(var(--gs) * 5);
                     p {
                         min-width: 250px;
                     }
                     img {
                         order: -1;
-                        margin-right: 10px;
+                        margin-right: 30px;
                     }
                 }
             }
             &:nth-child(2) {
-                @media (--desktop) and (--tablet-min) {
-                    max-width: 190px;
-                }
                 @media (--tablet) {
                     margin-left: calc(var(--gs) * 19);
 
@@ -76,11 +64,6 @@
                     margin-left: calc(var(--gs) * 0);
                 }
                 img {
-                    margin-left: -100px;
-                    @media (--desktop) and (--tablet-min) {
-                        margin-left: -80px;
-                    }
-
                     @media (--tablet) {
                         margin-left: 0;
                         order: -1;
@@ -109,12 +92,17 @@
 
                 @media (--mobile-lg) {
                     order: -1;
-                    margin-bottom: calc(var(--gs) * 1) !important;
+                    margin-bottom: calc(var(--gs) * 2) !important;
                 }
             }
 
             &-img {
-                max-height: 140px;
+                @media (--desktop) {
+                    max-height: 150px;
+                }
+                @media (--mobile-lg) {
+                    margin: 0 !important;
+                }
             }
         }
     }
@@ -141,12 +129,12 @@
     }
 
     .swiper-pagination-bullet {
-        background-color: var(--cl-violet);
+        background-color: var(--cl-white);
         opacity: 1;
     }
 
     .swiper-pagination-bullet-active {
-        border: 1px solid var(--cl-violet);
-        background-color: #fff;
+        border: 1px solid var(--cl-white);
+        background-color: var(--cl-violet);
     }
 }

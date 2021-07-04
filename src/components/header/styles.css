@@ -70,10 +70,6 @@
                 margin-bottom: 10px;
             }
 
-            p {
-                font-weight: 600 !important;
-            }
-
             &:hover {
                 background-color: rgba(96, 43, 122, 0.1);
             }
@@ -107,6 +103,7 @@
         &-phone {
             p {
                 font-weight: 600 !important;
+                color: var(--cl-violet);
             }
         }
 

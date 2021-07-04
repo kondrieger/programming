@@ -1,13 +1,15 @@
 <template>
     <div class="programming" id="programming">
-        <div class="wrap">
+        <div class="wrap--start">
             <Header />
             <ProgrammingStartBlock />
         </div>
-        <MathFeatures />
-        <MathsWorld />
-        <MathsComment />
-        <MathsCourses />
+        <div class="wrap--violet">
+            <ProgrammingFeatures />
+            <MathsWorld />
+            <MathsComment />
+            <MathsCourses />
+        </div>
         <MathsClaim />
         <MathsRoadmap />
     </div>
@@ -16,7 +18,7 @@
 <script>
 import Header from '../components/header/header-programming.vue';
 import ProgrammingStartBlock from '../views/ProgrammingStartBlock/ProgrammingStartBlock.vue';
-import MathFeatures from '../views/MathsFeatures/MathsFeatures.vue';
+import ProgrammingFeatures from '../views/ProgrammingFeatures/ProgrammingFeatures.vue';
 import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
 import MathsComment from '../views/MathsComment/MathsComment.vue';
 import MathsCourses from '../views/MathsCourses/MathsCourses.vue';
@@ -29,7 +31,7 @@ export default {
     components: {
         Header,
         ProgrammingStartBlock,
-        MathFeatures,
+        ProgrammingFeatures,
         MathsWorld,
         MathsComment,
         MathsCourses,
@@ -41,9 +43,25 @@ export default {
 
 <style scoped>
 .wrap {
-    @media (--desktop) {
-        position: relative;
-        overflow: hidden;
+    &--start {
+        @media (--desktop) {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: -46px;
+            z-index: 3;
+        }
+
+        @media (--tablet) {
+            margin-bottom: -24px;
+        }
+
+        @media (--mobile-lg) {
+            margin-bottom: -20px;
+        }
+    }
+
+    &--violet {
+        background-color: var(--cl-violet);
     }
 }
 .programming {

@@ -10,7 +10,7 @@
                 <img class="features__list-item-img" :src="require('../../img/svg/feature_2.svg')" alt="" />
             </li>
             <li class="features__list-item">
-                <p class="features__list-item-text"><b>Курсы для всех</b><br />мы не смотрим на школьные оценки</p>
+                <p class="features__list-item-text"><b>Уметь кодить не нужно — </b><br />научим с нуля</p>
                 <img class="features__list-item-img" :src="require('../../img/svg/feature_3.svg')" alt="" />
             </li>
         </ul>
@@ -27,7 +27,7 @@
             ></swiper-slide>
             <swiper-slide>
                 <div class="features__list-item">
-                    <p class="features__list-item-text"><b>Курсы для всех</b><br />мы не смотрим на школьные оценки</p>
+                    <p class="features__list-item-text"><b>Уметь кодить не нужно — </b><br />научим с нуля</p>
                     <img class="features__list-item-img" :src="require('../../img/svg/feature_3.svg')" alt="" /></div
             ></swiper-slide>
             <div class="swiper-pagination" slot="pagination"></div>
@@ -41,7 +41,7 @@ import 'swiper/css/swiper.css';
 
 import './styles.css';
 export default {
-    name: 'MathFeatures',
+    name: 'ProgrammingFeatures',
     components: {
         Swiper,
         SwiperSlide,

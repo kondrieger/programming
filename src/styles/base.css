@@ -23,7 +23,7 @@ body {
     font-size: 16px;
     line-height: 1.5;
     font-family: var(--font-montserrat);
-    color: var(--cl-violet);
+    color: var(--cl-white);
     overflow-x: hidden;
 }
 
@@ -89,7 +89,7 @@ p {
     font-size: 16px;
     line-height: 1.33;
     font-weight: 500;
-    color: var(--cl-violet);
+    color: var(--cl-white);
 }
 
 ul,
