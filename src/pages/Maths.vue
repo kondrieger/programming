@@ -4,6 +4,7 @@
         <MathsStartBlock />
         <MathFeatures />
         <MathsWorld />
+        <MathsComment />
     </div>
 </template>
 
@@ -12,11 +13,12 @@ import Header from '../components/header/header.vue';
 import MathsStartBlock from '../views/MathsStartBlock/MathsStartBlock.vue';
 import MathFeatures from '../views/MathsFeatures/MathsFeatures.vue';
 import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
+import MathsComment from '../views/MathsComment/MathsComment.vue';
 
 export default {
     name: 'Maths',
 
-    components: { Header, MathsStartBlock, MathFeatures, MathsWorld },
+    components: { Header, MathsStartBlock, MathFeatures, MathsWorld, MathsComment },
 };
 </script>
 
@@ -49,7 +51,7 @@ export default {
         }
 
         @media (--mobile-lg) {
-            background-position: center 57px;
+            background-position: center -15px;
             background-image: svg-load('../img/svg/math_bg_sm.svg');
         }
     }

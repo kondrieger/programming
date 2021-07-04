@@ -1,0 +1,269 @@
+<template>
+    <div class="container comment">
+        <div class="comment__wrap">
+            <h2 class="comment__title">С Алгоритмикой ребенок:</h2>
+            <ul v-if="!isTablet" class="comment__list">
+                <li class="comment__list-item">
+                    <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_1.svg')" alt="" />
+                    <p class="comment__list-item-text">Сформирует прочную базу знаний по математике</p>
+                </li>
+                <li class="comment__list-item comment__list-item--narrow">
+                    <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_2.svg')" alt="" />
+                    <p class="comment__list-item-text">Влюбится в предмет и углубит знания</p>
+                </li>
+                <li class="comment__list-item comment__list-item--narrow">
+                    <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_3.svg')" alt="" />
+                    <p class="comment__list-item-text">Улучшит успеваемость в школе</p>
+                </li>
+                <li class="comment__list-item">
+                    <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_4.svg')" alt="" />
+                    <p class="comment__list-item-text">Расширит возможности выбора профессии</p>
+                </li>
+            </ul>
+            <swiper v-else ref="mySwiper" class="" :options="swiperOptions">
+                <swiper-slide>
+                    <div class="comment__list-item">
+                        <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_1.svg')" alt="" />
+                        <p class="comment__list-item-text">Сформирует прочную базу знаний по математике</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comment__list-item">
+                        <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_2.svg')" alt="" />
+                        <p class="comment__list-item-text">Влюбится в предмет и углубит знания</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comment__list-item">
+                        <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_3.svg')" alt="" />
+                        <p class="comment__list-item-text">Улучшит успеваемость в школе</p>
+                    </div>
+                </swiper-slide>
+                <swiper-slide>
+                    <div class="comment__list-item">
+                        <img class="comment__list-item-img" :src="require('../../img/svg/math_comment_4.svg')" alt="" />
+                        <p class="comment__list-item-text">Расширит возможности выбора профессии</p>
+                    </div>
+                </swiper-slide>
+                <div class="swiper-pagination" slot="pagination"></div>
+            </swiper>
+        </div>
+    </div>
+</template>
+
+<script>
+import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper';
+import 'swiper/css/swiper.css';
+
+export default {
+    name: 'MathsComment',
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    directives: {
+        swiper: directive,
+    },
+    data() {
+        return {
+            swiperOptions: {
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+            },
+        };
+    },
+    computed: {
+        isTablet() {
+            return this.$mq.tablet;
+        },
+    },
+};
+</script>
+
+<style>
+.comment {
+    @media (--mobile-lg) {
+        max-width: 100%;
+    }
+
+    &__wrap {
+        width: 100%;
+        height: 520px;
+        background-color: var(--cl-dk-yellow);
+        position: relative;
+        padding: calc(var(--gs) * 7.2) calc(var(--gs) * 11);
+
+        @media (--desktop-lg) {
+            padding: calc(var(--gs) * 6) calc(var(--gs) * 7);
+        }
+
+        @media (--desktop) {
+            height: 414px;
+            padding: calc(var(--gs) * 5);
+        }
+
+        @media (--tablet) {
+            height: 277px;
+            padding: calc(var(--gs) * 4);
+        }
+
+        @media (--mobile-lg) {
+            height: 397px;
+            padding: calc(var(--gs) * 3.5) calc(var(--gs) * 2.5);
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 88px;
+            bottom: -40px;
+            height: 88px;
+            width: 88px;
+            background-color: var(--cl-dk-yellow);
+            transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+            z-index: -1;
+
+            @media (--desktop) {
+                left: 30px;
+                bottom: -15px;
+            }
+
+            @media (--mobile-lg) {
+                bottom: -10px;
+            }
+        }
+    }
+
+    &__title {
+        margin-bottom: calc(var(--gs) * 5.5);
+
+        @media (--desktop) {
+            margin-bottom: calc(var(--gs) * 4);
+        }
+
+        @media (--tablet) {
+            font-size: 28px;
+            margin-bottom: calc(var(--gs) * 0);
+        }
+
+        @media (--mobile-lg) {
+            margin-bottom: calc(var(--gs) * 1);
+        }
+    }
+
+    &__list {
+        display: flex;
+        justify-content: space-between;
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            max-width: 236px;
+            height: 233px;
+            justify-content: space-between;
+
+            @media (--desktop) {
+                max-width: 190px;
+                height: 220px;
+            }
+
+            @media (--tablet) and (--mobile-lg-min) {
+                flex-direction: row;
+                height: 120px;
+                max-width: 420px;
+                align-items: center;
+            }
+
+            @media (--mobile-lg) {
+                align-items: center;
+                height: 200px;
+                width: 100%;
+            }
+
+            &--narrow {
+                max-width: 200px;
+
+                @media (--desktop) {
+                    max-width: 150px;
+                    height: 220px;
+                }
+            }
+
+            &-img {
+                width: 150px;
+                height: 147px;
+
+                @media (--desktop-lg) {
+                    width: 135px;
+                    height: 135px;
+                }
+
+                @media (--desktop) {
+                    width: 120px;
+                    height: 120px;
+                }
+
+                @media (--tablet) and (--mobile-lg-min) {
+                    margin-right: calc(var(--gs) * 3);
+                }
+            }
+
+            &-text {
+                font-size: 20px;
+                line-height: 1.35;
+                font-weight: 600;
+
+                @media (--desktop) {
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+
+    .swiper-container {
+        height: 180px;
+        width: 100%;
+
+        @media (--mobile-lg) {
+            height: 250px;
+        }
+    }
+
+    .swiper-slide {
+        text-align: center;
+        font-size: 38px;
+        font-weight: 700;
+        background-color: transparent;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+
+    .swiper-pagination-bullet {
+        background-color: var(--cl-violet);
+        opacity: 1;
+    }
+
+    .swiper-pagination-bullet-active {
+        border: 1px solid var(--cl-violet);
+        background-color: transparent;
+    }
+
+    .swiper-pagination-fraction,
+    .swiper-pagination-custom,
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: 0;
+
+        @media (--mobile-lg) {
+            bottom: -5px;
+        }
+    }
+}
+</style>
