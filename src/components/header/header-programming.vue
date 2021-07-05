@@ -32,19 +32,23 @@
                     </a>
                 </div>
             </div>
-            <div v-else class="header__burger-wrap" @click="burger">
+            <button v-else class="header__burger-wrap" @click="burger">
                 <img class="header__burger-img" :src="require('../../img/svg/burger_icon.svg')" alt="" />
-            </div>
+            </button>
         </div>
+        <burger :show="showBurger" />
     </div>
 </template>
 
 <script>
 import './styles.css';
+
 export default {
     name: 'a-header',
     data() {
-        return {};
+        return {
+            showBurger: true,
+        };
     },
     computed: {
         isTablet() {
@@ -53,7 +57,7 @@ export default {
     },
     methods: {
         burger() {
-            console.log('burger');
+            this.showBurger = true;
         },
     },
 };
