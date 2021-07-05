@@ -1,16 +1,9 @@
 <template>
     <div @click="onClose" class="modal-mask">
-        <div
-            ref="wrapper"
-            class="modal-wrapper"
-            tabindex="0"
-            @keydown="keyDown"
-            :class="{ 'modal-wrapper--fullscreen': type === 'fullscreen' }"
-        >
+        <div ref="wrapper" class="modal-wrapper modal-wrapper--fullscreen" tabindex="0" @click.stop @keydown="keyDown">
             <div
                 class="modal-container popup"
                 :class="{ [`popup--${type}`]: type, [`popup--${name}`]: name }"
-                ref="popup"
                 @mousedown="onPopupMouseDown"
                 @mouseup="onPopupMouseUp"
             >
@@ -26,19 +19,12 @@
                     </slot>
                 </div>
 
-                <div class="modal-footer popup__footer" v-if="footerEnabled">
-                    <slot name="footer"></slot>
-                </div>
-                <button
-                    type="button"
-                    title="Закрыть"
+                <img
+                    @click="close"
                     class="modal-default-button popup__close"
-                    v-on:click="$emit('close')"
-                >
-                    <svg class="icon icon--cross-big" width="20px" height="20px">
-                        <use xlink:href="#icon-cross" />
-                    </svg>
-                </button>
+                    :src="require('../../img/svg/cross.svg')"
+                    alt=""
+                />
             </div>
         </div>
     </div>
@@ -46,7 +32,6 @@
 
 <script>
 import './modal.css';
-
 export default {
     name: 'modal',
     props: {
@@ -60,47 +45,47 @@ export default {
             type: Boolean,
             default: true,
         },
+        isScrollLocked: {
+            type: Boolean,
+            default: true,
+        },
         close: {
             type: Function,
             default: () => {},
         },
-        footerEnabled: {
-            type: Boolean,
-            default: false,
-        },
     },
-    components: {},
     data() {
         return {
             clickInside: false,
+            lock: false,
         };
     },
     methods: {
-        onPopupMouseDown(e) {
+        onPopupMouseDown() {
             this.clickInside = true;
         },
-        onPopupMouseUp(e) {
+        onPopupMouseUp() {
             this.clickInside = false;
         },
-        onClose(e) {
-            const { popup } = this.$refs;
-            if (popup && popup !== e.target && !popup.contains(e.target)) {
-                if (!this.clickInside) this.$emit('close');
-                else this.clickInside = false;
-            }
+        onClose() {
+            if (!this.clickInside) this.close();
+            else this.clickInside = false;
         },
         keyDown(e) {
             switch (e.key) {
                 case 'Escape':
-                    if (this.closeOnBtn) this.$emit('close');
+                    if (this.closeOnBtn) this.close();
                     e.preventDefault();
                     break;
             }
         },
     },
     mounted() {
+        this.lock = this.isScrollLocked;
         this.$refs.wrapper.focus();
     },
-    beforeDestroy() {},
+    beforeDestroy() {
+        this.lock = false;
+    },
 };
 </script>

@@ -140,9 +140,63 @@
 
     &__burger {
         &-img {
+            cursor: pointer;
+
             @media (--mobile-lg) {
                 width: 24px;
                 height: 20px;
+            }
+        }
+
+        &-wrap {
+            & .header__links {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+
+                padding-bottom: 30px;
+
+                .header__links-link {
+                    font-size: 18px !important;
+
+                    &:hover {
+                        background-color: var(--cl-white);
+                        p {
+                            color: var(--cl-violet) !important;
+                        }
+                    }
+                }
+            }
+
+            & .header__links--media {
+                position: relative;
+                padding-bottom: 0;
+                padding-top: 40px;
+                flex-direction: column-reverse;
+                align-items: center;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    width: 64px;
+                    height: 1px;
+                    background-color: rgba(164, 140, 175, 0.5);
+                    left: calc(50% - 32px);
+                    top: 0;
+                }
+
+                a {
+                    margin-bottom: 20px;
+                }
+            }
+
+            & * {
+                color: white !important;
+            }
+
+            & a {
+                margin-right: 0;
             }
         }
     }

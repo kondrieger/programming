@@ -99,48 +99,10 @@
     flex-direction: column;
     position: relative;
     max-width: 100%;
-    /* border-radius: 8px; */
     scrollbar-width: none;
-
-    &--image-preview {
-        max-height: 100%;
-        overflow-y: auto;
-        @media (--desktop-min) {
-            width: 80vw !important;
-        }
-    }
-
-    &--filters {
-        @media (--tablet-lg-min) {
-            background: transparent;
-        }
-
-        @media (--tablet-lg) {
-            width: 100%;
-        }
-
-        .popup__close {
-            @media (--tablet-lg-min) {
-                display: none;
-            }
-        }
-    }
-
-    &--city-selection {
-        overflow: hidden;
-        height: 100%;
-        @media (--tablet-min) {
-            height: 600px;
-        }
-    }
-
-    &--auth {
-        width: 480px;
-    }
-
-    &--sm {
-        width: 480px;
-    }
+    width: 100%;
+    min-height: 100%;
+    background-color: var(--cl-violet);
 
     @media (--tablet) {
         display: flex;
@@ -148,55 +110,6 @@
         align-items: flex-start;
         width: 100%;
         min-height: 100%;
-        /* border-radius: 0; */
-    }
-
-    &--wide {
-        width: 900px;
-
-        @media (--tablet) {
-            width: 100%;
-        }
-    }
-
-    &--fullscreen,
-    &--fixed {
-        width: 100%;
-        min-height: 100%;
-    }
-
-    &--aside {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        width: 450px;
-        height: 100%;
-
-        @media (--tablet) {
-            width: 100%;
-        }
-    }
-
-    &--dropdown {
-        width: 440px;
-        text-align: left;
-    }
-
-    &--text {
-        /* Здесь задаются стили для тегов и базовых классов, чтобы можно было вставлять контент из админки. */
-        h3 {
-            margin: calc(var(--gs) * 4) 0 calc(var(--gs) * 2);
-            font-weight: bold;
-        }
-
-        p {
-            margin: 0 0 calc(var(--gs) * 3);
-        }
-
-        strong {
-            font-weight: bold;
-        }
     }
 
     &__close {
@@ -204,18 +117,12 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 44px;
-        height: 44px;
+        width: 21px;
+        height: 21px;
         z-index: 1;
-        fill: var(--cl-grey);
-        transition: all $time ease;
         cursor: pointer;
-        right: calc(var(--gs) / -2);
-        top: calc(var(--gs) / -2);
-
-        &:hover {
-            fill: var(--cl-cyan);
-        }
+        right: 25px;
+        top: 20px;
 
         .icon {
             pointer-events: none;
@@ -235,41 +142,9 @@
 
     &__body {
         width: 100%;
-        padding: calc(var(--gs) * 5) calc(var(--gs) * 4);
+        padding: calc(var(--gs) * 4) 0;
         line-height: 150%;
-        flex-grow: 1;
-
-        .popup--image-preview & {
-            display: flex;
-            min-height: 100vh;
-
-            @media (--desktop-min) {
-                padding: calc(var(--gs) * 3.5) calc(var(--gs) * 7) calc(var(--gs) * 3.5) calc(var(--gs) * 7);
-            }
-
-            @media (--tablet-lg-min) and (--desktop) {
-                padding: calc(var(--gs) * 6) calc(var(--gs) * 7) calc(var(--gs) * 7);
-            }
-        }
-
-        .popup--city-selection & {
-            height: 100%;
-            overflow: hidden;
-        }
-
-        .popup--filters-glossary & {
-            padding: 0;
-        }
-
-        @media (--tablet) {
-            display: flex;
-            flex-grow: 1;
-        }
-
-        @media (--mobile-lg) {
-            padding: calc(var(--gs) * 4) calc(var(--gs) * 3);
-            margin: 0;
-        }
+        color: white;
     }
 
     &__hl {

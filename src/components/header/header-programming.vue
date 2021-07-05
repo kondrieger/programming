@@ -32,19 +32,64 @@
                     </a>
                 </div>
             </div>
-            <button v-else class="header__burger-wrap" @click="burger">
-                <img class="header__burger-img" :src="require('../../img/svg/burger_icon.svg')" alt="" />
-            </button>
+            <img
+                class="header__burger-img"
+                @click="openModal('Burger')"
+                :src="require('../../img/svg/burger_icon.svg')"
+                alt=""
+            />
+            <modal :close="closeModal" v-if="isModalOpen('Burger')">
+                <div slot="header">
+                    <img
+                        class="header__logo--white"
+                        :src="require('../../img/svg/programming_logo_white.svg')"
+                        alt="Алгоритмика математика логотип"
+                    />
+                </div>
+                <div slot="body">
+                    <div class="header__burger-wrap">
+                        <div class="header__links">
+                            <a class="header__links-link" href="#"><p>Факультет математики</p></a>
+                            <a class="header__links-link" href="#"><p>Франшиза</p></a>
+                            <a class="header__links-link" href="#"><p>Договор оферты</p></a>
+                            <a class="header__links-link" href="#"><p>Контакты</p></a>
+                        </div>
+                        <div class="header__links header__links--media">
+                            <a class="header__links-phone" href="tel:+74950239428"><p>+7 (495) 023-94-28</p></a>
+                            <div class="header__links-social">
+                                <a href="#" class="header__links-social-item">
+                                    <img
+                                        class="header__links-social-item-img--whats"
+                                        :src="require('../../img/svg/whats_logo_white.svg')"
+                                        alt="Whatsapp логотип"
+                                    />
+                                </a>
+
+                                <a href="#" class="header__links-social-item">
+                                    <img
+                                        class="header__links-social-item-img--tg"
+                                        :src="require('../../img/svg/tg_logo_white.svg')"
+                                        alt="Telegram логотип"
+                                    />
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </modal>
         </div>
-        <burger :show="showBurger" />
     </div>
 </template>
 
 <script>
+import Modal from '../modal/modal.vue';
+import modalMixin from '../../scripts/modalMixin.js';
 import './styles.css';
 
 export default {
     name: 'a-header',
+    components: { Modal },
+    mixins: [modalMixin],
     data() {
         return {
             showBurger: true,
