@@ -134,14 +134,18 @@ export default {
 <style>
 .courses {
     position: relative;
-    padding: calc(var(--gs) * 8) 0 calc(var(--gs) * 5);
+    padding: calc(var(--gs) * 8) 0 calc(var(--gs) * 3);
 
     @media (--desktop) {
         padding-top: calc(var(--gs) * 5);
     }
 
     @media (--tablet) {
-        padding-top: calc(var(--gs) * 3);
+        padding: calc(var(--gs) * 3) 0;
+    }
+
+    @media (--mobile-lg) {
+        padding-bottom: 0;
     }
 
     &__title {
@@ -173,6 +177,10 @@ export default {
 
         @media (--desktop) {
             top: 0px;
+        }
+
+        @media (--tablet) {
+            left: -20px;
         }
     }
 

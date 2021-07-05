@@ -4,13 +4,12 @@
 
         <ul v-if="!isDesktop" class="roadmap__list">
             <li class="roadmap__list-item">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.png')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.svg')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">1</span>
                     <p class="roadmap__list-item-title">Собственная игровая методика</p>
                     <p class="roadmap__list-item-text">
-                        Учимся в компании троллей-спецагентов: сюжетная линия превращает процесс обучения в
-                        многосерийный мультфильм
+                        Погружаемся в мир технологий через сюжеты о покорении космоса и работе в IT-компании
                     </p>
                 </div>
             </li>
@@ -18,10 +17,10 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_2.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">2</span>
-                    <p class="roadmap__list-item-title">Обучающая платформа</p>
+                    <p class="roadmap__list-item-title">Проектный подход</p>
                     <p class="roadmap__list-item-text">
-                        Получаем неограниченный доступ к умному учебнику и проходим задания в своем темпе, не
-                        ориентируясь на остальную группу
+                        С первых занятий применяем знания на практике, собирая мультики в Scratch и разрабатывая
+                        мобильные приложения на Python
                     </p>
                 </div>
             </li>
@@ -29,21 +28,21 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_3.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">3</span>
-                    <p class="roadmap__list-item-title">Закрепление школьной программы</p>
+                    <p class="roadmap__list-item-title">Обучающая платформа 3 в 1</p>
                     <p class="roadmap__list-item-text">
-                        Учимся понимать, а не зубрить: проходим все ключевые темы школьной математики и восполняем
-                        пробелы
+                        Используем платформу как умный учебник, лабораторию для создания проектов и сообщество по
+                        интересам
                     </p>
                 </div>
             </li>
             <li class="roadmap__list-item">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_4.png')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_4.svg')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">4</span>
-                    <p class="roadmap__list-item-title">Подготовка к будущему</p>
+                    <p class="roadmap__list-item-title">Навыки будущего</p>
                     <p class="roadmap__list-item-text">
-                        Решаем олимпиадные задачи, участвуем в математических боях и прокачиваем навыки, которые помогут
-                        в дальнейшей учебе и будущей профессии
+                        Прокачиваем навыки, с которыми проще учиться в школе, строить планы на будущее и добиваться
+                        поставленных целей
                     </p>
                 </div>
             </li>
@@ -51,23 +50,22 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_5.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">5</span>
-                    <p class="roadmap__list-item-title">Учеба без стресса</p>
+                    <p class="roadmap__list-item-title">Среда единомышленников</p>
                     <p class="roadmap__list-item-text">
-                        Не пишем контрольные, не отвечаем у доски и не делаем домашку, зато перестаем бояться ошибок и
-                        точных наук
+                        Строим планы с новыми друзьями со всего мира: создать совместный проект в Алгоритмике или свой
+                        первый IT-стартап за ее пределами
                     </p>
                 </div>
             </li>
         </ul>
         <swiper v-else ref="mySwiper" class="" :options="swiperOptions">
             <swiper-slide class="roadmap__slide">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.png')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.svg')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">1</span>
                     <p class="roadmap__list-item-title">Собственная игровая методика</p>
                     <p class="roadmap__list-item-text">
-                        Учимся в компании троллей-спецагентов: сюжетная линия превращает процесс обучения в
-                        многосерийный мультфильм
+                        Погружаемся в мир технологий через сюжеты о покорении космоса и работе в IT-компании
                     </p>
                 </div>
             </swiper-slide>
@@ -75,10 +73,10 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_2.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">2</span>
-                    <p class="roadmap__list-item-title">Обучающая платформа</p>
+                    <p class="roadmap__list-item-title">Проектный подход</p>
                     <p class="roadmap__list-item-text">
-                        Получаем неограниченный доступ к умному учебнику и проходим задания в своем темпе, не
-                        ориентируясь на остальную группу
+                        С первых занятий применяем знания на практике, собирая мультики в Scratch и разрабатывая
+                        мобильные приложения на Python
                     </p>
                 </div>
             </swiper-slide>
@@ -86,21 +84,21 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_3.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">3</span>
-                    <p class="roadmap__list-item-title">Закрепление школьной программы</p>
+                    <p class="roadmap__list-item-title">Обучающая платформа 3 в 1</p>
                     <p class="roadmap__list-item-text">
-                        Учимся понимать, а не зубрить: проходим все ключевые темы школьной математики и восполняем
-                        пробелы
+                        Используем платформу как умный учебник, лабораторию для создания проектов и сообщество по
+                        интересам
                     </p>
                 </div>
             </swiper-slide>
             <swiper-slide class="roadmap__slide">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_4.png')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/math_road_4.svg')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">4</span>
-                    <p class="roadmap__list-item-title">Подготовка к будущему</p>
+                    <p class="roadmap__list-item-title">Навыки будущего</p>
                     <p class="roadmap__list-item-text">
-                        Решаем олимпиадные задачи, участвуем в математических боях и прокачиваем навыки, которые помогут
-                        в дальнейшей учебе и будущей профессии
+                        Прокачиваем навыки, с которыми проще учиться в школе, строить планы на будущее и добиваться
+                        поставленных целей
                     </p>
                 </div>
             </swiper-slide>
@@ -108,10 +106,10 @@
                 <img class="roadmap__list-item-img" :src="require('../../img/math_road_5.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">5</span>
-                    <p class="roadmap__list-item-title">Учеба без стресса</p>
+                    <p class="roadmap__list-item-title">Среда единомышленников</p>
                     <p class="roadmap__list-item-text">
-                        Не пишем контрольные, не отвечаем у доски и не делаем домашку, зато перестаем бояться ошибок и
-                        точных наук
+                        Строим планы с новыми друзьями со всего мира: создать совместный проект в Алгоритмике или свой
+                        первый IT-стартап за ее пределами
                     </p>
                 </div>
             </swiper-slide>

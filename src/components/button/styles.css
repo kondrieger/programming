@@ -17,13 +17,17 @@
 
     &--wide {
         width: 424px;
-        height: 45px;
+        height: 56px;
         border-radius: 60px;
         color: var(--cl-violet);
         background-color: var(--cl-white);
 
         @media (--tablet) and (--mobile-lg-min) {
             height: 37px;
+        }
+
+        @media (--mobile-lg) {
+            height: 45px;
         }
 
         &:hover {

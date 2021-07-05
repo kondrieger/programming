@@ -13,8 +13,8 @@
                 <ProgrammingCourses />
             </div>
         </div>
-        <MathsClaim />
-        <MathsRoadmap />
+        <ProgrammingClaim />
+        <ProgrammingRoadmap />
     </div>
 </template>
 
@@ -26,8 +26,8 @@ import ProgrammingWorld from '../views/ProgrammingWorld/ProgrammingWorld.vue';
 import ProgrammingComment from '../views/ProgrammingComment/ProgrammingComment.vue';
 import ProgrammingSummer from '../views/ProgrammingSummer/ProgrammingSummer.vue';
 import ProgrammingCourses from '../views/ProgrammingCourses/ProgrammingCourses.vue';
-import MathsClaim from '../views/MathsClaim/MathsClaim.vue';
-import MathsRoadmap from '../views/MathsRoadmap/MathsRoadmap.vue';
+import ProgrammingClaim from '../views/ProgrammingClaim/ProgrammingClaim.vue';
+import ProgrammingRoadmap from '../views/ProgrammingRoadmap/ProgrammingRoadmap.vue';
 
 export default {
     name: 'Maths',
@@ -40,8 +40,8 @@ export default {
         ProgrammingComment,
         ProgrammingSummer,
         ProgrammingCourses,
-        MathsClaim,
-        MathsRoadmap,
+        ProgrammingClaim,
+        ProgrammingRoadmap,
     },
 };
 </script>
@@ -73,7 +73,7 @@ export default {
             position: absolute;
             top: -30px;
             width: 100%;
-            height: 4315.69px;
+            height: 5000px;
             background-image: svg-load('../img/svg/programming_bg.svg');
             background-color: var(--cl-violet);
             background-repeat: no-repeat;
@@ -81,7 +81,7 @@ export default {
             z-index: -10;
 
             @media (--desktop-lg) {
-                height: 4015.69px;
+                height: 4815px;
             }
 
             @media (--desktop) {
@@ -89,12 +89,12 @@ export default {
             }
 
             @media (--tablet) {
-                height: 2915.69px;
+                height: 3915.69px;
                 background-position: center 190px;
             }
 
             @media (--mobile-lg) {
-                height: 3315.69px;
+                height: 6015.69px;
                 background-position: center 530px;
                 background-image: svg-load('../img/svg/programming_bg_sm.svg');
             }
