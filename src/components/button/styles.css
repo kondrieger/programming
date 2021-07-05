@@ -41,7 +41,7 @@
     }
 
     &--green {
-        color: var(--cl-white);
+        color: var(--cl-violet);
         background-color: var(--cl-green);
 
         &:hover {

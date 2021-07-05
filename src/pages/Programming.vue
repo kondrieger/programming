@@ -7,9 +7,9 @@
         <div class="wrap--bg">
             <div class="wrap--violet">
                 <ProgrammingFeatures />
-                <MathsWorld />
-                <MathsComment />
-                <MathsCourses />
+                <ProgrammingWorld />
+                <ProgrammingComment />
+                <ProgrammingSummer />
             </div>
         </div>
         <MathsClaim />
@@ -21,9 +21,9 @@
 import Header from '../components/header/header-programming.vue';
 import ProgrammingStartBlock from '../views/ProgrammingStartBlock/ProgrammingStartBlock.vue';
 import ProgrammingFeatures from '../views/ProgrammingFeatures/ProgrammingFeatures.vue';
-import MathsWorld from '../views/MathsWorld/MathsWorld.vue';
-import MathsComment from '../views/MathsComment/MathsComment.vue';
-import MathsCourses from '../views/MathsCourses/MathsCourses.vue';
+import ProgrammingWorld from '../views/ProgrammingWorld/ProgrammingWorld.vue';
+import ProgrammingComment from '../views/ProgrammingComment/ProgrammingComment.vue';
+import ProgrammingSummer from '../views/ProgrammingSummer/ProgrammingSummer.vue';
 import MathsClaim from '../views/MathsClaim/MathsClaim.vue';
 import MathsRoadmap from '../views/MathsRoadmap/MathsRoadmap.vue';
 
@@ -34,9 +34,9 @@ export default {
         Header,
         ProgrammingStartBlock,
         ProgrammingFeatures,
-        MathsWorld,
-        MathsComment,
-        MathsCourses,
+        ProgrammingWorld,
+        ProgrammingComment,
+        ProgrammingSummer,
         MathsClaim,
         MathsRoadmap,
     },
