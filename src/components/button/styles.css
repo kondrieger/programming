@@ -11,12 +11,20 @@
     font-size: 15px;
     font-weight: 600;
 
+    @media (--tablet) and (--mobile-lg-min) {
+        height: 37px;
+    }
+
     &--wide {
         width: 424px;
         height: 45px;
         border-radius: 60px;
         color: var(--cl-violet);
         background-color: var(--cl-white);
+
+        @media (--tablet) and (--mobile-lg-min) {
+            height: 37px;
+        }
 
         &:hover {
             background-color: var(--cl-pink);
@@ -76,6 +84,98 @@
 
         &:active {
             background-color: var(--cl-violet);
+        }
+    }
+
+    &--orange {
+        color: var(--cl-white);
+        background-color: var(--cl-orange);
+
+        &:hover {
+            background-color: var(--cl-dk-orange);
+        }
+
+        &:active {
+            background-color: var(--cl-orange);
+        }
+    }
+
+    &--grey {
+        color: var(--cl-violet);
+        background-color: var(--cl-grey);
+
+        &:hover {
+            background-color: var(--cl-dk-grey);
+        }
+
+        &:active {
+            background-color: var(--cl-grey);
+        }
+    }
+
+    &--border {
+        color: var(--cl-violet);
+        background-color: var(--cl-grey);
+        border: 1px solid var(--cl-violet);
+
+        &:hover {
+            background-color: var(--cl-dk-grey);
+        }
+
+        &:active {
+            background-color: var(--cl-grey);
+        }
+    }
+
+    &--melon {
+        color: var(--cl-violet);
+        background-color: var(--cl-melon);
+
+        &:hover {
+            background-color: var(--cl-dk-melon);
+        }
+
+        &:active {
+            background-color: var(--cl-melon);
+        }
+    }
+
+    &--white {
+        color: var(--cl-violet);
+        background-color: var(--cl-white);
+
+        &:hover {
+            background-color: var(--cl-dk-pink);
+        }
+
+        &:active {
+            background-color: var(--cl-white);
+        }
+    }
+
+    &--pinky {
+        color: var(--cl-white);
+        background-color: var(--cl-pinky);
+
+        &:hover {
+            background-color: var(--cl-dk-pinky);
+        }
+
+        &:active {
+            background-color: var(--cl-pinky);
+        }
+    }
+
+    &--purple {
+        color: var(--cl-white);
+        background-color: var(--cl-purple);
+
+        &:hover {
+            background-color: var(--cl-dk-purple);
+        }
+
+        &:active {
+            background-color: var(--cl-purple);
         }
     }
 }

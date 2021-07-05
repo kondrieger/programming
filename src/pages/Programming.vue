@@ -10,6 +10,7 @@
                 <ProgrammingWorld />
                 <ProgrammingComment />
                 <ProgrammingSummer />
+                <ProgrammingCourses />
             </div>
         </div>
         <MathsClaim />
@@ -24,6 +25,7 @@ import ProgrammingFeatures from '../views/ProgrammingFeatures/ProgrammingFeature
 import ProgrammingWorld from '../views/ProgrammingWorld/ProgrammingWorld.vue';
 import ProgrammingComment from '../views/ProgrammingComment/ProgrammingComment.vue';
 import ProgrammingSummer from '../views/ProgrammingSummer/ProgrammingSummer.vue';
+import ProgrammingCourses from '../views/ProgrammingCourses/ProgrammingCourses.vue';
 import MathsClaim from '../views/MathsClaim/MathsClaim.vue';
 import MathsRoadmap from '../views/MathsRoadmap/MathsRoadmap.vue';
 
@@ -37,6 +39,7 @@ export default {
         ProgrammingWorld,
         ProgrammingComment,
         ProgrammingSummer,
+        ProgrammingCourses,
         MathsClaim,
         MathsRoadmap,
     },

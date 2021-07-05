@@ -55,15 +55,11 @@ export default {
 
     &__btn {
         margin: 0 auto;
+        font-size: 1.25rem;
 
-        @media (--tablet) and (--mobile-lg-min) {
-            width: 200px;
-            height: 37px;
-            font-size: 13px;
-        }
-
-        @media (--mobile-lg) {
-            width: 100%;
+        @media (--tablet) {
+            font-size: 15px;
+            width: 239px;
         }
     }
 }

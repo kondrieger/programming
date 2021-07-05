@@ -54,6 +54,7 @@
             @media (--desktop) {
                 flex-direction: column;
                 margin-top: -17px;
+                align-items: flex-end;
             }
         }
 

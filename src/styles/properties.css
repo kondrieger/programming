@@ -16,6 +16,16 @@
     --cl-dk-blue: #1e87c2;
     --cl-pink: #f8dddd;
     --cl-red: #ff4c8d;
+    --cl-orange: #ff6658;
+    --cl-dk-orange: #fb5849;
+    --cl-grey: #fef4f6;
+    --cl-dk-grey: #f8dfe4;
+    --cl-melon: #fffcb8;
+    --cl-dk-melon: #f5f197;
+    --cl-pinky: #ec4f92;
+    --cl-dk-pinky: #e63d85;
+    --cl-purple: #b05cc1;
+    --cl-dk-purple: #a744bb;
 
     /* rgb-составляющие цветов для использования rgba(var(--rgb-black), var(--opacity)). */
     --rgb-black: 0, 0, 0;
