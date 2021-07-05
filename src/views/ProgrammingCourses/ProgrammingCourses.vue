@@ -170,6 +170,10 @@ export default {
         position: absolute;
         top: 50px;
         left: 20px;
+
+        @media (--desktop) {
+            top: 0px;
+        }
     }
 
     &__list {
@@ -206,6 +210,14 @@ export default {
                 padding: calc(var(--gs) * 7.5) calc(var(--gs) * 3) calc(var(--gs) * 2.5);
             }
 
+            @media (--mobile-lg) {
+                width: 322px;
+                height: 390px;
+                justify-content: flex-end;
+                margin-bottom: calc(var(--gs) * 2);
+                padding: calc(var(--gs) * 2.6);
+            }
+
             &:nth-child(odd) {
                 margin-right: calc(var(--gs) * 2);
 
@@ -219,6 +231,10 @@ export default {
 
                 @media (--tablet) {
                     margin-right: calc(var(--gs) * 0.9);
+                }
+
+                @media (--mobile-lg) {
+                    margin-right: 0;
                 }
             }
 
@@ -239,6 +255,12 @@ export default {
                     font-size: 18px;
                     line-height: 22px;
                     margin-bottom: calc(var(--gs) * 1);
+                }
+
+                @media (--mobile-lg) {
+                    font-size: 20px;
+                    line-height: 24px;
+                    max-width: 239px;
                 }
 
                 &::after {
@@ -287,6 +309,12 @@ export default {
                     line-height: 22px;
                     width: 100%;
                 }
+
+                @media (--mobile-lg) {
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: calc(var(--gs) * 2);
+                }
             }
 
             &-img {
@@ -312,10 +340,28 @@ export default {
                     max-width: 150px;
                     right: -15px;
                 }
+
+                @media (--mobile-lg) {
+                    max-width: 220px;
+                    top: -10px;
+                    right: -20px;
+                    left: auto;
+                    bottom: auto;
+                }
+            }
+
+            & .btn {
+                @media (--tablet) {
+                    margin-left: -5px;
+                }
             }
 
             &--violet {
                 background-color: var(--cl-violet);
+
+                @media (--mobile-lg) {
+                    background-color: var(--cl-dk-violet);
+                }
             }
 
             &--purple {
@@ -332,8 +378,15 @@ export default {
                 }
 
                 .courses__list-item-title {
-                    @media (--tablet) {
+                    @media (--tablet) and (--mobile-lg-min) {
                         width: 120px;
+                    }
+                }
+
+                .courses__list-item-img {
+                    @media (--mobile-lg) {
+                        width: 175px;
+                        right: 20px;
                     }
                 }
             }
@@ -345,6 +398,14 @@ export default {
                 & .courses__list-item-age,
                 & .courses__list-item-text {
                     color: var(--cl-violet);
+                }
+
+                .courses__list-item-img {
+                    @media (--mobile-lg) {
+                        width: 242.78px;
+                        height: 219.43px;
+                        right: 0px;
+                    }
                 }
             }
 
@@ -382,7 +443,7 @@ export default {
                 }
 
                 .courses__list-item-img {
-                    @media (--tablet) {
+                    @media (--tablet) and (--mobile-lg-min) {
                         width: 120px;
                         top: 0px;
                     }
@@ -399,9 +460,15 @@ export default {
                 }
 
                 .courses__list-item-img {
-                    @media (--tablet) {
+                    @media (--tablet) and (--mobile-lg-min) {
                         width: 120px;
                         top: -15px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 215px;
+                        right: 20px;
+                        top: -30px;
                     }
                 }
             }
