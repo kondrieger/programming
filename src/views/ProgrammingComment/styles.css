@@ -36,18 +36,27 @@
             position: absolute;
             left: 110px;
             bottom: -40px;
-            height: 88px;
+            height: 80px;
             width: 80px;
             background-color: var(--cl-yellow);
             transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
             z-index: -1;
 
+            @media (--desktop-lg) {
+                left: 70px;
+            }
+
             @media (--desktop) {
-                left: 30px;
+                left: 50px;
                 bottom: -15px;
             }
 
+            @media (--tablet) {
+                left: 40px;
+            }
+
             @media (--mobile-lg) {
+                left: 25px;
                 bottom: -10px;
             }
         }
