@@ -98,7 +98,7 @@
                     <div class="courses__list-item-img-wrap">
                         <img
                             class="courses__list-item-img"
-                            :src="require('../../img/svg/programming_courses_4.svg')"
+                            :src="require('../../img/programming_courses_4.png')"
                             alt=""
                         />
                     </div>
@@ -632,6 +632,8 @@ export default {
                 .courses__list-item-img-wrap {
                     bottom: 44px;
                     right: 31px;
+                    width: 288.29px;
+                    height: 328px;
 
                     @media (--desktop-lg) {
                         right: -17px;

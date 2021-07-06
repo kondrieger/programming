@@ -7,7 +7,7 @@
             </li>
             <li class="features__list-item">
                 <p class="features__list-item-text"><b>В школе Алгоритмики</b><br />или онлайн</p>
-                <img class="features__list-item-img" :src="require('../../img/svg/feature_2.svg')" alt="" />
+                <img class="features__list-item-img" :src="require('../../img/feature_2.png')" alt="" />
             </li>
             <li class="features__list-item">
                 <p class="features__list-item-text"><b>Уметь кодить не нужно — </b><br />научим с нуля</p>
