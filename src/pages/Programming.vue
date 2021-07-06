@@ -53,7 +53,6 @@ export default {
             position: relative;
             overflow: hidden;
             margin-bottom: -18px;
-            z-index: 3;
         }
 
         @media (--tablet) {
@@ -77,15 +76,15 @@ export default {
             background-image: svg-load('../img/svg/programming_bg.svg');
             background-color: var(--cl-violet);
             background-repeat: no-repeat;
-            background-position: center 200px;
-            z-index: -10;
+            background-position: center 100px;
+            z-index: -110;
 
             @media (--desktop-lg) {
                 height: 4815px;
             }
 
             @media (--desktop) {
-                background-position: center 120px;
+                background-position: center 20px;
             }
 
             @media (--tablet) {
@@ -95,7 +94,7 @@ export default {
 
             @media (--mobile-lg) {
                 height: 6015.69px;
-                background-position: center 530px;
+                background-position: center 500px;
                 background-image: svg-load('../img/svg/programming_bg_sm.svg');
             }
         }

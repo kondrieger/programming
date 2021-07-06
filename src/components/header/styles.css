@@ -143,11 +143,8 @@
     &__burger {
         &-img {
             cursor: pointer;
-
-            @media (--mobile-lg) {
-                width: 24px;
-                height: 20px;
-            }
+            width: 24px;
+            height: 20px;
         }
 
         &-wrap {
