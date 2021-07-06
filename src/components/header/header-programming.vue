@@ -32,12 +32,9 @@
                     </a>
                 </div>
             </div>
-            <img
-                class="header__burger-img"
-                @click="openModal('Burger')"
-                :src="require('../../img/svg/burger_icon.svg')"
-                alt=""
-            />
+            <div v-else class="header__burger-wrap" @click="openModal('Burger')">
+                <img class="header__burger-img" :src="require('../../img/svg/burger_icon.svg')" alt="" />
+            </div>
             <modal :close="closeModal" v-if="isModalOpen('Burger')">
                 <div slot="header">
                     <img
