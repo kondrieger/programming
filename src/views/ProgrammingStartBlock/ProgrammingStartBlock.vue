@@ -11,6 +11,11 @@
             alt=""
         />
         <img
+            class="start-block__bg start-block__bg--top start-block__bg--top-sm"
+            :src="require('../../img/svg/programming_start_bg_top_sm.svg')"
+            alt=""
+        />
+        <img
             class="start-block__bg start-block__bg--bottom"
             :src="require('../../img/svg/programming_start_bg_bottom.svg')"
             alt=""

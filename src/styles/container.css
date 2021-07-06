@@ -1,20 +1,21 @@
 .container {
-    max-width: 1320px;
+    max-width: 1600px;
     margin: 0 auto;
+    padding-left: calc(var(--gs) * 14.5);
+    padding-right: calc(var(--gs) * 14.5);
 
     @media (--desktop-lg) {
-        max-width: 1160px;
+        padding-left: calc(var(--gs) * 10);
+        padding-right: calc(var(--gs) * 10);
     }
 
     @media (--desktop) {
-        max-width: 885px;
+        padding-left: calc(var(--gs) * 6);
+        padding-right: calc(var(--gs) * 6);
     }
 
     @media (--tablet) {
-        max-width: 586px;
-    }
-
-    @media (--mobile-lg) {
-        max-width: 312px;
+        padding-left: calc(var(--gs) * 3);
+        padding-right: calc(var(--gs) * 3);
     }
 }

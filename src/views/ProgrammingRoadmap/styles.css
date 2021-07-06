@@ -1,8 +1,10 @@
 .roadmap {
-    padding: calc(var(--gs) * 10) 0;
+    padding-top: calc(var(--gs) * 10);
+    padding-bottom: calc(var(--gs) * 10);
 
     @media (--tablet) {
-        padding: calc(var(--gs) * 6) 0 calc(var(--gs) * 8);
+        padding-top: calc(var(--gs) * 6);
+        padding-bottom: calc(var(--gs) * 8);
     }
 
     &__title {

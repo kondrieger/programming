@@ -1,5 +1,6 @@
 .start-block {
-    padding: calc(var(--gs) * 3) 0;
+    padding-top: calc(var(--gs) * 3);
+    padding-bottom: calc(var(--gs) * 3);
     display: flex;
     justify-content: space-between;
     background: transparent;
@@ -101,7 +102,17 @@
             }
 
             @media (--mobile-lg) {
-                transform: rotate(10deg);
+                display: none;
+            }
+
+            &-sm {
+                display: none;
+
+                @media (--mobile-lg) {
+                    display: block;
+                    top: -140px;
+                    right: -90px;
+                }
             }
         }
 
@@ -123,7 +134,8 @@
             @media (--tablet) {
                 width: 992px;
                 height: 306.78px;
-                left: -80px;
+                left: auto;
+                right: -280px;
             }
 
             @media (--mobile-lg) {

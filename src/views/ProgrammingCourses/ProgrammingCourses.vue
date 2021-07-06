@@ -179,14 +179,16 @@ export default {
 <style>
 .courses {
     position: relative;
-    padding: calc(var(--gs) * 8) 0 calc(var(--gs) * 3);
+    padding-top: calc(var(--gs) * 8);
+    padding-bottom: calc(var(--gs) * 3);
 
     @media (--desktop) {
         padding-top: calc(var(--gs) * 5);
     }
 
     @media (--tablet) {
-        padding: calc(var(--gs) * 3) 0;
+        padding-top: calc(var(--gs) * 3);
+        padding-bottom: calc(var(--gs) * 3);
     }
 
     @media (--mobile-lg) {
@@ -232,10 +234,11 @@ export default {
     &__list {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         &-item {
             position: relative;
-            width: 650px;
+            width: calc(50% - 10px);
             height: 365px;
             border-radius: 20px;
             margin-bottom: calc(var(--gs) * 2);
@@ -245,26 +248,26 @@ export default {
             justify-content: space-between;
 
             @media (--desktop-lg) {
-                width: 572px;
                 margin-bottom: calc(var(--gs) * 1.6);
+                width: calc(50% - 8px);
             }
 
             @media (--desktop) {
-                width: 436px;
                 padding: calc(var(--gs) * 10) calc(var(--gs) * 4) calc(var(--gs) * 3);
                 margin-bottom: calc(var(--gs) * 1.3);
+                width: calc(50% - 6.5px);
                 height: 430px;
             }
 
             @media (--tablet) {
-                width: 288px;
+                width: calc(50% - 4.5px);
                 height: 330px;
                 margin-bottom: calc(var(--gs) * 0.9);
                 padding: calc(var(--gs) * 7.5) calc(var(--gs) * 3) calc(var(--gs) * 2.5);
             }
 
             @media (--mobile-lg) {
-                width: 322px;
+                width: 100%;
                 height: 390px;
                 justify-content: flex-end;
                 margin-bottom: calc(var(--gs) * 2);

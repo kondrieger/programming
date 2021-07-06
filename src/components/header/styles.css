@@ -2,13 +2,15 @@
     background: transparent;
 
     &__wrap {
-        padding: calc(var(--gs) * 5) 0;
+        padding-top: calc(var(--gs) * 5);
+        padding-bottom: calc(var(--gs) * 5);
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         @media (--desktop) {
-            padding: calc(var(--gs) * 4) 0 calc(var(--gs) * 2);
+            padding-top: calc(var(--gs) * 4);
+            padding-bottom: calc(var(--gs) * 2);
         }
 
         @media (--tablet) {

@@ -1,5 +1,6 @@
 .world {
-    padding: calc(var(--gs) * 10) 0 calc(var(--gs) * 5);
+    padding-top: calc(var(--gs) * 10);
+    padding-bottom: calc(var(--gs) * 5);
     display: flex;
     justify-content: center;
     align-items: center;

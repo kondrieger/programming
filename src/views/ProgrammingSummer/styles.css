@@ -1,5 +1,6 @@
 .summer {
-    padding: calc(var(--gs) * 8) 0 calc(var(--gs) * 5);
+    padding-top: calc(var(--gs) * 8);
+    padding-bottom: calc(var(--gs) * 5);
 
     @media (--desktop) {
         padding-top: calc(var(--gs) * 5);

@@ -1,10 +1,12 @@
 .features {
-    padding: calc(var(--gs) * 9) 0;
+    padding-top: calc(var(--gs) * 9);
+    padding-bottom: calc(var(--gs) * 9);
     display: flex;
     justify-content: center;
 
     @media (--tablet) {
-        padding: calc(var(--gs) * 5) 0;
+        padding-top: calc(var(--gs) * 5);
+        padding-bottom: calc(var(--gs) * 5);
     }
 
     &__list {
@@ -19,11 +21,13 @@
         @media (--tablet) {
             flex-direction: column;
             justify-content: unset;
+            max-width: 650px;
         }
 
         @media (--mobile-lg) {
             display: block;
         }
+
         &-item {
             display: flex;
             flex-direction: column;
