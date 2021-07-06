@@ -88,10 +88,6 @@ export default {
             font-size: 15px;
             width: 239px;
         }
-
-        @media (--mobile-lg) {
-            width: 100%;
-        }
     }
 
     &__img {

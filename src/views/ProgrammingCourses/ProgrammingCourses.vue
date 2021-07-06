@@ -180,7 +180,7 @@ export default {
 .courses {
     position: relative;
     padding-top: calc(var(--gs) * 8);
-    padding-bottom: calc(var(--gs) * 3);
+    padding-bottom: calc(var(--gs) * 2);
 
     @media (--desktop) {
         padding-top: calc(var(--gs) * 5);
