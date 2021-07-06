@@ -10,7 +10,7 @@
     }
 
     &__title {
-        margin: 0 0 calc(var(--gs) * 7) calc(var(--gs) * 7);
+        margin: 0 0 calc(var(--gs) * 7) calc(var(--gs) * 11);
 
         @media (--desktop-lg) {
             margin-left: 0;

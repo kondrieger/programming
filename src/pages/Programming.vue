@@ -90,7 +90,7 @@ export default {
 
             @media (--tablet) {
                 height: 3915.69px;
-                background-position: center 190px;
+                background-position: center 45px;
             }
 
             @media (--mobile-lg) {

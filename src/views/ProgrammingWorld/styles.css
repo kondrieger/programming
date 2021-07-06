@@ -139,10 +139,6 @@
                 @media (--tablet) {
                     font-size: 20px;
                 }
-
-                @media (--mobile-lg) {
-                    font-weight: bold;
-                }
             }
         }
     }

@@ -5,7 +5,12 @@
         <ul class="courses__list">
             <li class="courses__list-item courses__list-item--violet">
                 <div>
-                    <a href="#" class="courses__list-item-title">Python Pro</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Python Pro<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_white.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">14–17 лет</p>
                     <p class="courses__list-item-text">
                         Научим извлекать полезную информацию из больших наборов данных и строить модели на уровне
@@ -19,20 +24,30 @@
             </li>
             <li class="courses__list-item courses__list-item--purple">
                 <div>
-                    <a href="#" class="courses__list-item-title">Python Start</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Python Start<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_white.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">12–13 лет</p>
                     <p class="courses__list-item-text">
                         В формате игры пройдем путь от собеседования в IT-компании до должности ведущего разработчика
                     </p>
                 </div>
 
-                <a-button theme="white" text="Записаться на курс" />
+                <a-button theme="grey" text="Записаться на курс" />
 
                 <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_2.svg')" alt="" />
             </li>
             <li class="courses__list-item courses__list-item--green">
                 <div>
-                    <a href="#" class="courses__list-item-title">Создание веб-сайтов</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Создание веб-сайтов<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_violet.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">11-12 лет</p>
                     <p class="courses__list-item-text">
                         Пройдем полный цикл создания креативного проекта «по-взрослому»
@@ -45,7 +60,12 @@
             </li>
             <li class="courses__list-item courses__list-item--orange">
                 <div>
-                    <a href="#" class="courses__list-item-title">Геймдизайн</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Геймдизайн<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_violet.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">10-11 лет</p>
                     <p class="courses__list-item-text">Программирование настоящих игр на платформе Roblox</p>
                 </div>
@@ -56,7 +76,12 @@
             </li>
             <li class="courses__list-item courses__list-item--red">
                 <div>
-                    <a href="#" class="courses__list-item-title">Дизайн</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Дизайн<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_white.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">9–14 лет</p>
                     <p class="courses__list-item-text">От создания компьютерной графики до 3D моделировния</p>
                 </div>
@@ -67,7 +92,12 @@
             </li>
             <li class="courses__list-item courses__list-item--pink">
                 <div>
-                    <a href="#" class="courses__list-item-title">Блоггинг</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Блоггинг<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_violet.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">9-11 лет</p>
                     <p class="courses__list-item-text">
                         Видео и фото съемка, ретушь монтаж, композиция. Навыки сторителлинга и управления своим блогом
@@ -80,7 +110,12 @@
             </li>
             <li class="courses__list-item courses__list-item--dk-pink">
                 <div>
-                    <a href="#" class="courses__list-item-title">Визуальное программирование</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Визуальное программирование<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_white.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">9–10 лет</p>
                     <p class="courses__list-item-text">
                         С этого уровня начинается настоящее программирование на Scratch
@@ -93,7 +128,12 @@
             </li>
             <li class="courses__list-item courses__list-item--blue">
                 <div>
-                    <a href="#" class="courses__list-item-title">Компьютерная грамотность</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Компьютерная грамотность<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_violet.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">7-9 лет</p>
                     <p class="courses__list-item-text">
                         Обучаем работать с самыми популярными программами и приложениями
@@ -106,7 +146,12 @@
             </li>
             <li class="courses__list-item courses__list-item--yellow">
                 <div>
-                    <a href="#" class="courses__list-item-title">Основы логики и программирования</a>
+                    <a href="#" class="courses__list-item-title"
+                        >Основы логики и программирования<img
+                            class="courses__list-item-title-img"
+                            :src="require('../../img/svg/share_icon_violet.svg')"
+                            alt=""
+                    /></a>
                     <p class="courses__list-item-age">6–7 лет</p>
                     <p class="courses__list-item-text">
                         Наши курсы для самых маленьких, на которых они только начинают понимать, что такое код
@@ -149,7 +194,7 @@ export default {
     }
 
     &__title {
-        margin: 0 0 calc(var(--gs) * 4) calc(var(--gs) * 7);
+        margin: 0 0 calc(var(--gs) * 4) calc(var(--gs) * 11);
 
         @media (--desktop-lg) {
             margin-left: 0;
@@ -173,7 +218,7 @@ export default {
         z-index: -1;
         position: absolute;
         top: 50px;
-        left: 20px;
+        left: 70px;
 
         @media (--desktop) {
             top: 0px;
@@ -251,18 +296,13 @@ export default {
                 font-weight: 800;
                 color: var(--cl-white);
                 cursor: pointer;
-                margin-bottom: calc(var(--gs) * 1.5);
+                margin-bottom: calc(var(--gs) * 0.5);
                 position: relative;
                 max-width: 370px;
-
-                @media (--desktop) {
-                    max-width: 200px;
-                }
 
                 @media (--tablet) {
                     font-size: 18px;
                     line-height: 22px;
-                    margin-bottom: calc(var(--gs) * 1);
                 }
 
                 @media (--mobile-lg) {
@@ -271,22 +311,24 @@ export default {
                     max-width: 239px;
                 }
 
-                &::after {
-                    content: '';
-                    display: none;
-                    height: 18px;
-                    width: 18px;
+                &-img {
+                    height: 16px;
+                    width: 16px;
                     margin-left: 5px;
-                    background-color: transparent;
-                    background-image: svg-load('../../img/svg/share_icon.svg');
-                    background-repeat: no-repeat;
+                    fill: var(--cl-violet);
+                    display: none;
+
+                    @media (--tablet) {
+                        height: 12px;
+                        width: 12px;
+                    }
                 }
 
                 &:hover {
                     text-decoration-line: underline;
 
-                    &::after {
-                        /* display: inline-block; */
+                    .courses__list-item-title-img {
+                        display: inline;
                     }
                 }
             }
@@ -306,10 +348,10 @@ export default {
                 font-weight: 500;
                 font-size: 19px;
                 line-height: 25px;
-                width: 315px;
+                width: 290px;
 
                 @media (--desktop-lg) {
-                    width: 280px;
+                    width: 270px;
                 }
 
                 @media (--desktop) {
@@ -327,35 +369,7 @@ export default {
 
             &-img {
                 position: absolute;
-                right: -10px;
-                max-width: 310px;
                 z-index: 0;
-
-                @media (--desktop-lg) {
-                    bottom: 60px;
-                    right: -21px;
-                    max-width: 270px;
-                }
-
-                @media (--desktop) {
-                    max-width: 220px;
-                    right: -10px;
-                    top: -10px;
-                    bottom: auto;
-                }
-
-                @media (--tablet) {
-                    max-width: 150px;
-                    right: -15px;
-                }
-
-                @media (--mobile-lg) {
-                    max-width: 220px;
-                    top: -10px;
-                    right: -20px;
-                    left: auto;
-                    bottom: auto;
-                }
             }
 
             & .btn {
@@ -370,10 +384,67 @@ export default {
                 @media (--mobile-lg) {
                     background-color: var(--cl-dk-violet);
                 }
+
+                .courses__list-item-img {
+                    right: -25px;
+                    bottom: 0;
+
+                    @media (--desktop) {
+                        width: 215.94px;
+                        height: 197.91px;
+                        right: -8px;
+                        top: -10px;
+                    }
+
+                    @media (--tablet) {
+                        width: 184.45px;
+                        height: 146.04px;
+                        top: -11px;
+                        right: -18px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 241.11px;
+                        height: 206.2px;
+                        top: -10px;
+                        right: -10px;
+                    }
+                }
             }
 
             &--purple {
                 background-color: #8d30b9;
+
+                .courses__list-item-img {
+                    right: 0;
+                    bottom: 30px;
+
+                    @media (--desktop-lg) {
+                        right: -17px;
+                        bottom: 20px;
+                    }
+
+                    @media (--desktop) {
+                        width: 233.35px;
+                        height: 146.88px;
+                        right: -8px;
+                        top: -10px;
+                    }
+
+                    @media (--tablet) {
+                        width: 156.43px;
+                        height: 98.46px;
+                        top: -7px;
+                        right: -5px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 236px;
+                        height: 148.55px;
+                        top: -10px;
+                        right: 40px;
+                    }
+                }
             }
 
             &--green {
@@ -386,15 +457,42 @@ export default {
                 }
 
                 .courses__list-item-title {
+                    @media (--desktop) {
+                        width: 170px;
+                    }
+
                     @media (--tablet) and (--mobile-lg-min) {
-                        width: 120px;
+                        width: 140px;
                     }
                 }
 
                 .courses__list-item-img {
+                    right: 27px;
+                    bottom: 50px;
+
+                    @media (--desktop-lg) {
+                        right: -17px;
+                    }
+
+                    @media (--desktop) {
+                        width: 205.03px;
+                        height: 185.55px;
+                        right: 14px;
+                        top: 3px;
+                    }
+
+                    @media (--tablet) {
+                        width: 133.82px;
+                        height: 121.11px;
+                        top: 3px;
+                        right: -4px;
+                    }
+
                     @media (--mobile-lg) {
                         width: 175px;
-                        right: 20px;
+                        height: 158.38px;
+                        top: -14px;
+                        right: 56px;
                     }
                 }
             }
@@ -408,17 +506,91 @@ export default {
                     color: var(--cl-violet);
                 }
 
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 156px;
+                }
+
+                @media (--tablet) {
+                    padding-top: 96px;
+                }
+
                 .courses__list-item-img {
+                    bottom: 44px;
+                    right: 31px;
+
+                    @media (--desktop-lg) {
+                        right: -17px;
+                    }
+
+                    @media (--desktop) {
+                        width: 204.06px;
+                        height: 232.17px;
+                        right: -6px;
+                        top: -1px;
+                    }
+
+                    @media (--tablet) {
+                        width: 139.84px;
+                        height: 159.11px;
+                        top: 7px;
+                        right: -3px;
+                    }
+
                     @media (--mobile-lg) {
-                        width: 242.78px;
-                        height: 219.43px;
-                        right: 0px;
+                        width: 232.78px;
+                        height: 209.43px;
+                        right: 30px;
+                        top: -10px;
                     }
                 }
             }
 
             &--red {
                 background-color: #ff5a50;
+
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 156px;
+                }
+
+                .courses__list-item-img {
+                    bottom: 53px;
+                    right: 8px;
+
+                    @media (--desktop-lg) {
+                        width: 297.69px;
+                        height: 255.89px;
+                        right: -10px;
+                        bottom: auto;
+                        top: 38px;
+                    }
+
+                    @media (--desktop) {
+                        width: 229.37px;
+                        height: 197.17px;
+                        top: 38px;
+                        right: 10px;
+                    }
+
+                    @media (--tablet) {
+                        width: 146.58px;
+                        height: 126px;
+                        top: -5px;
+                        right: 11px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 230.78px;
+                        height: 203.95px;
+                        right: -6px;
+                        top: 6px;
+                    }
+                }
+
+                .courses__list-item-text {
+                    @media (--desktop) and (--tablet-min) {
+                        width: 227.37px;
+                    }
+                }
             }
 
             &--pink {
@@ -429,14 +601,81 @@ export default {
                 & .courses__list-item-text {
                     color: var(--cl-violet);
                 }
+
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 126px;
+                }
+
+                .courses__list-item-img {
+                    bottom: 53px;
+                    right: 0;
+
+                    @media (--desktop) {
+                        width: 205px;
+                        height: 184.38px;
+                        top: 20px;
+                        right: 17px;
+                    }
+
+                    @media (--tablet) {
+                        width: 144px;
+                        height: 129.51px;
+                        top: 5px;
+                        right: 10px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 215px;
+                        height: 193.37px;
+                        right: -8px;
+                        top: -1px;
+                    }
+                }
+
+                .courses__list-item-text {
+                    @media (--desktop) and (--tablet-min) {
+                        width: 264.37px;
+                    }
+                }
             }
 
             &--dk-pink {
                 background-color: #f44c75;
 
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 110px;
+                }
+
                 .courses__list-item-img {
-                    @media (--desktop-lg-min) {
-                        right: -20px;
+                    right: -10px;
+                    bottom: -5px;
+
+                    @media (--desktop-lg) {
+                        width: 293.46px;
+                        height: 193px;
+                        right: -30px;
+                        bottom: 0;
+                    }
+
+                    @media (--desktop) {
+                        width: 225.28px;
+                        height: 148.14px;
+                        right: -1px;
+                        top: -7px;
+                    }
+
+                    @media (--tablet) {
+                        width: 150.32px;
+                        height: 89.63px;
+                        top: -5px;
+                        right: -9px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 243.73px;
+                        height: 160px;
+                        right: -10px;
+                        top: -20px;
                     }
                 }
             }
@@ -450,10 +689,41 @@ export default {
                     color: var(--cl-violet);
                 }
 
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 110px;
+                }
+
                 .courses__list-item-img {
-                    @media (--tablet) and (--mobile-lg-min) {
-                        width: 120px;
-                        top: 0px;
+                    right: -30px;
+                    bottom: 30px;
+
+                    @media (--desktop-lg) {
+                        width: 278.26px;
+                        height: 197.24px;
+                        top: 35px;
+                        right: -8px;
+                        bottom: auto;
+                    }
+
+                    @media (--desktop) {
+                        width: 233.49px;
+                        height: 164.88px;
+                        right: -10px;
+                        top: -7px;
+                    }
+
+                    @media (--tablet) {
+                        width: 133.6px;
+                        height: 94.34px;
+                        top: -3px;
+                        right: -17px;
+                    }
+
+                    @media (--mobile-lg) {
+                        width: 243.73px;
+                        height: 160px;
+                        right: -1px;
+                        top: -13px;
                     }
                 }
             }
@@ -468,15 +738,36 @@ export default {
                 }
 
                 .courses__list-item-img {
-                    @media (--tablet) and (--mobile-lg-min) {
-                        width: 120px;
-                        top: -15px;
+                    bottom: 58px;
+                    right: -8px;
+
+                    @media (--desktop-lg) {
+                        width: 262.91px;
+                        height: 201.34px;
+                        right: -30px;
+                        bottom: 38px;
+                    }
+
+                    @media (--desktop) {
+                        width: 193.71px;
+                        height: 148.34px;
+                        right: -10px;
+                        top: -22px;
+                        bottom: auto;
+                    }
+
+                    @media (--tablet) {
+                        width: 117.89px;
+                        height: 90.28px;
+                        bottom: -3px;
+                        top: -13px;
                     }
 
                     @media (--mobile-lg) {
-                        width: 215px;
-                        right: 20px;
-                        top: -30px;
+                        width: 213.54px;
+                        height: 163.53px;
+                        right: 70px;
+                        top: -20px;
                     }
                 }
             }
