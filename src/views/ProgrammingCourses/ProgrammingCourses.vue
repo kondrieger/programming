@@ -3,165 +3,231 @@
         <h2 class="courses__title">Курсы программирования</h2>
         <img class="courses__bg" :src="require('../../img/svg/programming_square.svg')" alt="" />
         <ul class="courses__list">
-            <li class="courses__list-item courses__list-item--violet">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Python Pro<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_white.svg')"
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--violet">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Python Pro<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_white.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">14–17 лет</p>
+                        <p class="courses__list-item-text">
+                            Научим извлекать полезную информацию из больших наборов данных и строить модели на уровне
+                            профессионалов
+                        </p>
+                    </div>
+
+                    <a-button theme="orange" text="Оставить заявку" />
+
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_1.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">14–17 лет</p>
-                    <p class="courses__list-item-text">
-                        Научим извлекать полезную информацию из больших наборов данных и строить модели на уровне
-                        профессионалов
-                    </p>
-                </div>
+                        />
+                    </div></li
+            ></a>
 
-                <a-button theme="orange" text="Оставить заявку" />
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--purple">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Python Start<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_white.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">12–13 лет</p>
+                        <p class="courses__list-item-text">
+                            В формате игры пройдем путь от собеседования в IT-компании до должности ведущего
+                            разработчика
+                        </p>
+                    </div>
 
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_1.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--purple">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Python Start<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_white.svg')"
+                    <a-button theme="grey" text="Записаться на курс" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_2.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">12–13 лет</p>
-                    <p class="courses__list-item-text">
-                        В формате игры пройдем путь от собеседования в IT-компании до должности ведущего разработчика
-                    </p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--green">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Создание веб-сайтов<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_violet.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">11-12 лет</p>
+                        <p class="courses__list-item-text">
+                            Пройдем полный цикл создания креативного проекта «по-взрослому»
+                        </p>
+                    </div>
 
-                <a-button theme="grey" text="Записаться на курс" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_2.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--green">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Создание веб-сайтов<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_violet.svg')"
+                    <a-button theme="border" text="Записаться на курс" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_3.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">11-12 лет</p>
-                    <p class="courses__list-item-text">
-                        Пройдем полный цикл создания креативного проекта «по-взрослому»
-                    </p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--orange">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Геймдизайн<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_violet.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">10-11 лет</p>
+                        <p class="courses__list-item-text">Программирование настоящих игр на платформе Roblox</p>
+                    </div>
 
-                <a-button theme="border" text="Записаться на курс" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_3.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--orange">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Геймдизайн<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_violet.svg')"
+                    <a-button theme="violet" text="Оставить заявку" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_4.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">10-11 лет</p>
-                    <p class="courses__list-item-text">Программирование настоящих игр на платформе Roblox</p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--red">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Дизайн<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_white.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">9–14 лет</p>
+                        <p class="courses__list-item-text">От создания компьютерной графики до 3D моделировния</p>
+                    </div>
 
-                <a-button theme="violet" text="Оставить заявку" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_4.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--red">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Дизайн<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_white.svg')"
+                    <a-button theme="melon" text="Оставить заявку" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_5.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">9–14 лет</p>
-                    <p class="courses__list-item-text">От создания компьютерной графики до 3D моделировния</p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--pink">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Блоггинг<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_violet.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">9-11 лет</p>
+                        <p class="courses__list-item-text">
+                            Видео и фото съемка, ретушь монтаж, композиция. Навыки сторителлинга и управления своим
+                            блогом
+                        </p>
+                    </div>
 
-                <a-button theme="melon" text="Оставить заявку" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_5.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--pink">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Блоггинг<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_violet.svg')"
+                    <a-button theme="pinky" text="Записаться на курс" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_6.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">9-11 лет</p>
-                    <p class="courses__list-item-text">
-                        Видео и фото съемка, ретушь монтаж, композиция. Навыки сторителлинга и управления своим блогом
-                    </p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--dk-pink">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Визуальное программирование<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_white.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">9–10 лет</p>
+                        <p class="courses__list-item-text">
+                            С этого уровня начинается настоящее программирование на Scratch
+                        </p>
+                    </div>
 
-                <a-button theme="pinky" text="Записаться на курс" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_6.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--dk-pink">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Визуальное программирование<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_white.svg')"
+                    <a-button theme="grey" text="Записаться на курс" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_7.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">9–10 лет</p>
-                    <p class="courses__list-item-text">
-                        С этого уровня начинается настоящее программирование на Scratch
-                    </p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--blue">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Компьютерная грамотность<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_violet.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">7-9 лет</p>
+                        <p class="courses__list-item-text">
+                            Обучаем работать с самыми популярными программами и приложениями
+                        </p>
+                    </div>
 
-                <a-button theme="grey" text="Записаться на курс" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_7.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--blue">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Компьютерная грамотность<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_violet.svg')"
+                    <a-button theme="purple" text="Оставить заявку" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_8.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">7-9 лет</p>
-                    <p class="courses__list-item-text">
-                        Обучаем работать с самыми популярными программами и приложениями
-                    </p>
-                </div>
+                        />
+                    </div>
+                </li>
+            </a>
+            <a class="courses__list-item-wrap" href="javascript:;">
+                <li class="courses__list-item courses__list-item--yellow">
+                    <div>
+                        <a href="#" class="courses__list-item-title"
+                            >Основы логики и программирования<img
+                                class="courses__list-item-title-img"
+                                :src="require('../../img/svg/share_icon_violet.svg')"
+                                alt=""
+                        /></a>
+                        <p class="courses__list-item-age">6–7 лет</p>
+                        <p class="courses__list-item-text">
+                            Наши курсы для самых маленьких, на которых они только начинают понимать, что такое код
+                        </p>
+                    </div>
 
-                <a-button theme="purple" text="Оставить заявку" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_8.svg')" alt="" />
-            </li>
-            <li class="courses__list-item courses__list-item--yellow">
-                <div>
-                    <a href="#" class="courses__list-item-title"
-                        >Основы логики и программирования<img
-                            class="courses__list-item-title-img"
-                            :src="require('../../img/svg/share_icon_violet.svg')"
+                    <a-button theme="violet" text="Оставить заявку" />
+                    <div class="courses__list-item-img-wrap">
+                        <img
+                            class="courses__list-item-img"
+                            :src="require('../../img/svg/programming_courses_9.svg')"
                             alt=""
-                    /></a>
-                    <p class="courses__list-item-age">6–7 лет</p>
-                    <p class="courses__list-item-text">
-                        Наши курсы для самых маленьких, на которых они только начинают понимать, что такое код
-                    </p>
-                </div>
-
-                <a-button theme="violet" text="Оставить заявку" />
-
-                <img class="courses__list-item-img" :src="require('../../img/svg/programming_courses_9.svg')" alt="" />
-            </li>
+                        />
+                    </div>
+                </li>
+            </a>
         </ul>
     </div>
 </template>
@@ -238,7 +304,7 @@ export default {
 
         &-item {
             position: relative;
-            width: calc(50% - 10px);
+            min-width: 100%;
             height: 365px;
             border-radius: 20px;
             margin-bottom: calc(var(--gs) * 2);
@@ -272,6 +338,56 @@ export default {
                 justify-content: flex-end;
                 margin-bottom: calc(var(--gs) * 2);
                 padding: calc(var(--gs) * 2.6);
+            }
+
+            &-wrap {
+                width: calc(50% - 10px);
+
+                @media (--desktop-lg) {
+                    width: calc(50% - 8px);
+                }
+
+                @media (--desktop) {
+                    width: calc(50% - 6.5px);
+                }
+
+                @media (--tablet) {
+                    width: calc(50% - 4.5px);
+                }
+
+                @media (--mobile-lg) {
+                    width: 100%;
+                }
+
+                &:active {
+                    padding-top: 10px;
+                    margin-bottom: -10px !important;
+
+                    @media (--tablet) {
+                        padding-top: 5px;
+                        margin-bottom: -5px !important;
+                    }
+                }
+
+                &:hover {
+                    & .courses__list-item-title {
+                        text-decoration-line: underline;
+                    }
+
+                    & .courses__list-item-title-img {
+                        display: inline;
+                    }
+
+                    & .courses__list-item-img {
+                        margin-top: -10px;
+                    }
+
+                    & .courses__list-item-img-wrap {
+                        @media (--desktop-min) {
+                            padding-bottom: 10px;
+                        }
+                    }
+                }
             }
 
             &:nth-child(odd) {
@@ -326,14 +442,6 @@ export default {
                         width: 12px;
                     }
                 }
-
-                &:hover {
-                    text-decoration-line: underline;
-
-                    .courses__list-item-title-img {
-                        display: inline;
-                    }
-                }
             }
 
             &-age {
@@ -370,7 +478,7 @@ export default {
                 }
             }
 
-            &-img {
+            &-img-wrap {
                 position: absolute;
                 z-index: 0;
             }
@@ -388,7 +496,8 @@ export default {
                     background-color: var(--cl-dk-violet);
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     right: -25px;
                     bottom: 0;
 
@@ -418,7 +527,8 @@ export default {
             &--purple {
                 background-color: #8d30b9;
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     right: 0;
                     bottom: 30px;
 
@@ -469,7 +579,8 @@ export default {
                     }
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     right: 27px;
                     bottom: 50px;
 
@@ -517,7 +628,8 @@ export default {
                     padding-top: 96px;
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     bottom: 44px;
                     right: 31px;
 
@@ -555,7 +667,8 @@ export default {
                     padding-top: 156px;
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     bottom: 53px;
                     right: 8px;
 
@@ -609,7 +722,8 @@ export default {
                     padding-top: 126px;
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     bottom: 53px;
                     right: 0;
 
@@ -649,7 +763,8 @@ export default {
                     padding-top: 110px;
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     right: -10px;
                     bottom: -5px;
 
@@ -696,7 +811,8 @@ export default {
                     padding-top: 110px;
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     right: -30px;
                     bottom: 30px;
 
@@ -740,7 +856,8 @@ export default {
                     color: var(--cl-violet);
                 }
 
-                .courses__list-item-img {
+                .courses__list-item-img,
+                .courses__list-item-img-wrap {
                     bottom: 58px;
                     right: -8px;
 
