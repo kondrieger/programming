@@ -4,14 +4,14 @@
         <a href="javascript:;" class="summer__card-wrap">
             <div class="summer__card">
                 <div class="summer__card-text-wrap">
-                    <p class="summer__card-title">
+                    <a href="javascript:;" class="summer__card-title">
                         Летние смены
                         <img
                             class="summer__card-title-img"
                             :src="require('../../img/svg/share_icon_white.svg')"
                             alt=""
                         />
-                    </p>
+                    </a>
                     <p class="summer__card-subtitle">7–9 / 10-12 лет</p>
                     <p v-if="isDesktop" class="summer__card-text">
                         Увлекательное двухмесячное погружение в мир современных digital-профессий. От программиста до

@@ -19,20 +19,24 @@ export default {
 
 <style>
 .claim {
-    padding: calc(var(--gs) * 8.5) 0;
+    padding-top: calc(var(--gs) * 8.5);
+    padding-bottom: calc(var(--gs) * 8.5);
     text-align: center;
     position: relative;
 
     @media (--desktop) {
-        padding: calc(var(--gs) * 7) 0;
+        padding-top: calc(var(--gs) * 7);
+        padding-bottom: calc(var(--gs) * 7);
     }
 
     @media (--tablet) {
-        padding: calc(var(--gs) * 6) 0 calc(var(--gs) * 5);
+        padding-top: calc(var(--gs) * 6);
+        padding-bottom: calc(var(--gs) * 5);
     }
 
     @media (--mobile-lg) {
-        padding: calc(var(--gs) * 4) 0;
+        padding-top: calc(var(--gs) * 4);
+        padding-bottom: calc(var(--gs) * 4);
     }
 
     &__wrap {

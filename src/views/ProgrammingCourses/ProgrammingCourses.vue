@@ -501,7 +501,7 @@ export default {
                 }
 
                 @media (--tablet) and (--mobile-lg-min) {
-                    padding-top: 65px;
+                    padding-top: 45px;
                 }
 
                 .courses__list-item-img,
@@ -570,6 +570,10 @@ export default {
 
             &--green {
                 background-color: #cbf86d;
+
+                @media (--desktop) and (--tablet-min) {
+                    padding-top: 156px;
+                }
 
                 & .courses__list-item-title,
                 & .courses__list-item-age,
@@ -774,7 +778,7 @@ export default {
                 }
 
                 @media (--tablet) and (--mobile-lg-min) {
-                    padding-top: 90px;
+                    padding-top: 65px;
                 }
 
                 .courses__list-item-img,
@@ -826,7 +830,7 @@ export default {
                 }
 
                 @media (--tablet) and (--mobile-lg-min) {
-                    padding-top: 90px;
+                    padding-top: 65px;
                 }
 
                 .courses__list-item-img,

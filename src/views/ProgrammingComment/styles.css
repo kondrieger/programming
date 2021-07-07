@@ -1,8 +1,10 @@
 .comment {
     padding-bottom: calc(var(--gs) * 5);
+    overflow: hidden;
 
     @media (--mobile-lg) {
-        max-width: 100%;
+        padding-right: 0;
+        padding-left: 0;
     }
 
     &__wrap {
@@ -94,7 +96,7 @@
 
             @media (--desktop) {
                 height: 220px;
-                max-width: 240px;
+                max-width: 200px;
             }
 
             @media (--tablet) and (--mobile-lg-min) {

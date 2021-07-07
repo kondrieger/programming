@@ -5,13 +5,13 @@
     padding-right: calc(var(--gs) * 14.5);
 
     @media (--desktop-lg) {
-        padding-left: calc(var(--gs) * 10);
-        padding-right: calc(var(--gs) * 10);
+        padding-left: calc(var(--gs) * 6);
+        padding-right: calc(var(--gs) * 6);
     }
 
     @media (--desktop) {
-        padding-left: calc(var(--gs) * 6);
-        padding-right: calc(var(--gs) * 6);
+        padding-left: calc(var(--gs) * 3.5);
+        padding-right: calc(var(--gs) * 3.5);
     }
 
     @media (--tablet) {
