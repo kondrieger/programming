@@ -495,6 +495,11 @@ export default {
                 @media (--tablet) {
                     margin-left: -5px;
                 }
+
+                @media (max-width: 359px) {
+                    margin-left: 0;
+                    width: 100%;
+                }
             }
 
             &--violet {
@@ -533,6 +538,11 @@ export default {
                         top: -10px;
                         right: -10px;
                     }
+
+                    @media (max-width: 359px) {
+                        right: -30px;
+                        height: 160px;
+                    }
                 }
             }
 
@@ -568,6 +578,10 @@ export default {
                         height: 148.55px;
                         top: -10px;
                         right: 40px;
+                    }
+
+                    @media (max-width: 359px) {
+                        right: 20px;
                     }
                 }
             }
@@ -718,6 +732,11 @@ export default {
                         right: -6px;
                         top: 6px;
                     }
+
+                    @media (max-width: 359px) {
+                        right: 0;
+                        height: 160px;
+                    }
                 }
 
                 .courses__list-item-text {
@@ -764,6 +783,11 @@ export default {
                         height: 193.37px;
                         right: -8px;
                         top: -1px;
+                    }
+
+                    @media (max-width: 359px) {
+                        right: 0;
+                        height: 160px;
                     }
                 }
 
@@ -816,6 +840,11 @@ export default {
                         height: 160px;
                         right: -10px;
                         top: -20px;
+                    }
+
+                    @media (max-width: 359px) {
+                        right: 0;
+                        height: 140px;
                     }
                 }
             }
@@ -914,6 +943,12 @@ export default {
                         height: 163.53px;
                         right: 70px;
                         top: -20px;
+                    }
+
+                    @media (max-width: 359px) {
+                        right: 40px;
+                        height: 140px;
+                        width: 200px;
                     }
                 }
             }
