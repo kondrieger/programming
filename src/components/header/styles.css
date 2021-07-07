@@ -20,9 +20,9 @@
     }
 
     &__logo {
-        height: 66.5px;
+        height: 65px;
         margin-right: 50px;
-        margin-bottom: -27px;
+        margin-bottom: -25px;
 
         @media (--desktop-lg) {
             margin-right: 20px;
@@ -33,7 +33,7 @@
         }
 
         @media (--tablet) {
-            height: 47px;
+            height: 46px;
             margin-right: 0;
             margin-bottom: -60px;
         }
