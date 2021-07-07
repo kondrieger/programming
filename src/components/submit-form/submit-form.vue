@@ -98,7 +98,7 @@ export default {
         margin-top: calc(var(--gs) * 3.5);
         font-size: 12.4px;
         color: var(--cl-white);
-        line-height: 1.25;
+        line-height: 1.5;
 
         & a {
             display: inline;

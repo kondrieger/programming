@@ -114,6 +114,10 @@
             &-img {
                 height: 147px;
 
+                @media (--desktop-lg-min) {
+                    margin-bottom: 20px;
+                }
+
                 @media (--desktop) {
                     width: 120px;
                     height: 120px;

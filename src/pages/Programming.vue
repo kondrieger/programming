@@ -72,16 +72,12 @@ export default {
             position: absolute;
             top: -30px;
             width: 100%;
-            height: 5000px;
+            height: 4800px;
             background-image: svg-load('../img/svg/programming_bg.svg');
             background-color: var(--cl-violet);
             background-repeat: no-repeat;
             background-position: center 100px;
             z-index: -110;
-
-            @media (--desktop-lg) {
-                height: 4815px;
-            }
 
             @media (--desktop) {
                 background-position: center 20px;
@@ -96,6 +92,10 @@ export default {
                 height: 6015.69px;
                 background-position: center 500px;
                 background-image: svg-load('../img/svg/programming_bg_sm.svg');
+            }
+
+            @media (max-width: 450px) {
+                background-position: center 530px;
             }
         }
     }

@@ -29,6 +29,18 @@
         @media (--tablet) {
             margin-bottom: calc(var(--gs) * 3);
         }
+
+        &-img {
+            height: 16px;
+            width: 16px;
+            margin-left: 5px;
+            display: none;
+
+            @media (--tablet) {
+                height: 12px;
+                width: 12px;
+            }
+        }
     }
 
     &__card {
@@ -50,10 +62,43 @@
             padding: 0;
         }
 
+        &-wrap {
+            width: 100%;
+
+            &:hover {
+                & .summer__card-img {
+                    margin-top: -10px;
+                }
+
+                & .summer__card-title {
+                    text-decoration-line: underline;
+                }
+
+                & .summer__card-title-img {
+                    display: inline;
+                }
+
+                & {
+                    @media (--mobile-lg) {
+                        padding-bottom: 10px !important;
+                    }
+                }
+            }
+
+            &:active {
+                padding-top: 10px;
+                margin-bottom: -10px !important;
+
+                @media (--tablet) {
+                    padding-top: 5px;
+                    margin-bottom: -5px !important;
+                }
+            }
+        }
+
         &-title {
             font-weight: 800;
             font-size: 24px;
-            text-decoration-line: underline;
             margin-bottom: calc(var(--gs) * 1.5);
 
             @media (--tablet) {
@@ -64,6 +109,18 @@
             @media (--mobile-lg) {
                 font-size: 20px;
                 text-decoration-line: none;
+            }
+
+            &-img {
+                height: 16px;
+                width: 16px;
+                margin-left: 5px;
+                display: none;
+
+                @media (--tablet) {
+                    height: 12px;
+                    width: 12px;
+                }
             }
         }
 

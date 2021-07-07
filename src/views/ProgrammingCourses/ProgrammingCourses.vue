@@ -286,7 +286,11 @@ export default {
         z-index: -1;
         position: absolute;
         top: 50px;
-        left: 70px;
+        left: 210px;
+
+        @media (--desktop-lg) {
+            left: 70px;
+        }
 
         @media (--desktop) {
             top: 0px;
@@ -418,6 +422,7 @@ export default {
                 margin-bottom: calc(var(--gs) * 0.5);
                 position: relative;
                 max-width: 370px;
+                line-height: 1.2;
 
                 @media (--tablet) {
                     font-size: 18px;
@@ -434,7 +439,6 @@ export default {
                     height: 16px;
                     width: 16px;
                     margin-left: 5px;
-                    fill: var(--cl-violet);
                     display: none;
 
                     @media (--tablet) {
@@ -494,6 +498,10 @@ export default {
 
                 @media (--mobile-lg) {
                     background-color: var(--cl-dk-violet);
+                }
+
+                @media (--tablet) and (--mobile-lg-min) {
+                    padding-top: 65px;
                 }
 
                 .courses__list-item-img,
@@ -765,6 +773,10 @@ export default {
                     padding-top: 110px;
                 }
 
+                @media (--tablet) and (--mobile-lg-min) {
+                    padding-top: 90px;
+                }
+
                 .courses__list-item-img,
                 .courses__list-item-img-wrap {
                     right: -10px;
@@ -811,6 +823,10 @@ export default {
 
                 @media (--desktop) and (--tablet-min) {
                     padding-top: 110px;
+                }
+
+                @media (--tablet) and (--mobile-lg-min) {
+                    padding-top: 90px;
                 }
 
                 .courses__list-item-img,

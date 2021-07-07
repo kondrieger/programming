@@ -311,10 +311,6 @@
     .swiper-pagination-bullet {
         background-color: var(--cl-violet);
         opacity: 1;
-
-        @media (--mobile-lg-min) {
-            display: none;
-        }
     }
 
     .swiper-pagination-bullet-active {
