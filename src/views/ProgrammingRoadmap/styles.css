@@ -208,6 +208,8 @@
         }
 
         & .roadmap__list-item-img {
+            width: 336px;
+
             @media (--tablet-min) {
                 margin-right: calc(var(--gs) * 3);
             }
