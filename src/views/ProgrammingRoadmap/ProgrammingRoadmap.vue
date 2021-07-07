@@ -4,7 +4,7 @@
 
         <ul v-if="!isDesktop" class="roadmap__list">
             <li class="roadmap__list-item">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.svg')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/programming_road_1.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">1</span>
                     <p class="roadmap__list-item-title">Собственная игровая методика</p>
@@ -60,7 +60,7 @@
         </ul>
         <swiper v-else ref="mySwiper" class="" :options="swiperOptions">
             <swiper-slide class="roadmap__slide">
-                <img class="roadmap__list-item-img" :src="require('../../img/math_road_1.svg')" alt="" />
+                <img class="roadmap__list-item-img" :src="require('../../img/programming_road_1.png')" alt="" />
                 <div class="roadmap__list-item-text-wrap">
                     <span class="roadmap__list-item-number">1</span>
                     <p class="roadmap__list-item-title">Собственная игровая методика</p>

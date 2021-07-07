@@ -19,7 +19,7 @@
                     </p>
                     <a-button theme="green" text="Оставить заявку" />
                 </div>
-                <img class="summer__card-img" :src="require('../../img/svg/programming_summer.svg')" alt="" />
+                <img class="summer__card-img" :src="require('../../img/programming_summer.png')" alt="" />
                 <p v-if="!isDesktop" class="summer__card-text summer__card-text--right">
                     Увлекательное двухмесячное погружение в мир современных digital-профессий. От программиста до
                     дизайнера

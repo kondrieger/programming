@@ -179,6 +179,8 @@
             position: absolute;
             left: 28%;
             top: -50px;
+            width: 458.75px;
+            height: 325.92px;
 
             @media (--desktop-lg) {
                 left: 24%;

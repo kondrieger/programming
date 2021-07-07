@@ -50,6 +50,12 @@
             }
 
             &:nth-child(1) {
+                img {
+                    @media (--desktop-min) {
+                        width: 243px;
+                        height: 204.52px;
+                    }
+                }
                 @media (--tablet) {
                     margin-left: calc(var(--gs) * 5);
                     p {
@@ -82,6 +88,10 @@
                     margin-left: calc(var(--gs) * 0);
                 }
                 img {
+                    @media (--desktop-min) {
+                        width: 156.24px;
+                        height: 189.71px;
+                    }
                     @media (--tablet) {
                         margin-left: 0;
                         order: -1;
