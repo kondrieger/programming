@@ -15,7 +15,7 @@
     }
 
     @media (--tablet) {
-        padding-left: calc(var(--gs) * 3);
-        padding-right: calc(var(--gs) * 3);
+        padding-left: calc(var(--gs) * 2.4);
+        padding-right: calc(var(--gs) * 2.4);
     }
 }

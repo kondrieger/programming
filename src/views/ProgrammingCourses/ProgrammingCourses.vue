@@ -280,6 +280,10 @@ export default {
         @media (--tablet) {
             margin-bottom: calc(var(--gs) * 3);
         }
+
+        @media (--mobile-lg) {
+            font-size: 25px !important;
+        }
     }
 
     &__bg {

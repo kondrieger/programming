@@ -8,6 +8,7 @@
 
     @media (--tablet) {
         padding-top: calc(var(--gs) * 3);
+        overflow: hidden;
     }
 
     &__title {
@@ -28,6 +29,10 @@
 
         @media (--tablet) {
             margin-bottom: calc(var(--gs) * 3);
+        }
+
+        @media (--mobile-lg) {
+            font-size: 25px !important;
         }
 
         &-img {
